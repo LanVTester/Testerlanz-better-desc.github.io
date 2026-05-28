@@ -2,30 +2,31 @@
   content="width=device-width,
   initial-scale=1.0">
 <style>
-  /* This controls how your page looks on regular computers */
-  .main-container {
-    max-width: 980px !important;
-    margin: 20px auto !important;
-    padding: 15px !important;
+  /* 1. Automatically forces your first big main container to behave on phones */
+  body > div:first-of-type {
+    max-width: 980px;
+    margin: 20px auto;
   }
 
-  /* 📱 MOBILE OVERRIDE: If the screen is smaller than 768px, force these changes */
+  /* 📱 AUTOMATED MOBILE OVERRIDE */
   @media only screen and (max-width: 768px) {
-    .main-container {
+    /* Shrinks the main background wrapper so it doesn't cause sideways scrolling */
+    body > div:first-of-type {
       max-width: 100% !important;
       margin: 0 !important;
-      padding: 8px !important;
+      padding: 10px !important;
     }
-    
-    /* Forces columns (like Badges & Achievements) to stack vertically on phones */
-    div[style*="display:flex"], div[style*="display: flex"] {
-      flex-direction: column !important;
-    }
-    
-    /* Makes sure elements take up full mobile width instead of squishing side-by-side */
-    div[style*="flex:1"], div[style*="flex: 1"] {
+
+    /* Finds the specific big side-by-side containers and stacks them on phones */
+    div[style*="min-width:250px"], div[style*="min-width: 250px"] {
       width: 100% !important;
       min-width: 100% !important;
+    }
+    
+    /* Forces the parent rows of those big boxes to stack vertically */
+    div[style*="min-width:250px"] Cruz, 
+    div[style*="gap:12px"] {
+      flex-direction: column !important;
     }
   }
 </style>

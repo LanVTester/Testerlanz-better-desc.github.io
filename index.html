@@ -1,6 +1,4 @@
-<meta name="viewport"
-  content="width=device-width,
-  initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   /* 1. Automatically forces your first big main container to behave on phones */
   body > div:first-of-type {
@@ -10,24 +8,1278 @@
 
   /* 📱 AUTOMATED MOBILE OVERRIDE */
   @media only screen and (max-width: 768px) {
-    /* Shrinks the main background wrapper so it doesn't cause sideways scrolling */
     body > div:first-of-type {
       max-width: 100% !important;
       margin: 0 !important;
       padding: 10px !important;
     }
-
-    /* Finds the specific big side-by-side containers and stacks them on phones */
     div[style*="min-width:250px"], div[style*="min-width: 250px"] {
       width: 100% !important;
       min-width: 100% !important;
     }
-    
-    /* Forces the parent rows of those big boxes to stack vertically */
     div[style*="min-width:250px"] Cruz, 
     div[style*="gap:12px"] {
       flex-direction: column !important;
     }
   }
 </style>
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Crimson Land-Guard</title><style>html,body{margin:0;padding:0;background-color:#0a0302;color:#f5ecea;font-family:'Consolas','Courier New',monospace}::selection{background:#ff3300;color:#fff;text-shadow:none}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#0a0302}::-webkit-scrollbar-thumb{background:#ff3300;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#ff9900}:root{--primary:#ff3300;--primary-dark:#800000;--accent:#ff9900;--accent-dark:#cc5200;--bg:#0a0302;--panel-bg:rgba(18,5,2,0.88);--text:#f5ecea;--text-muted:#ab958e;--green:#00ff66;--red:#ff003c;--yellow:#ffcc00}.profile-wrapper{position:relative;background-image:linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)),url('assets/IKuyoCrimson.jpg');background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;border:3px solid var(--primary-dark);border-radius:12px;padding:20px;max-width:980px;margin:20px auto;box-sizing:border-box;overflow:hidden;animation:pulseBorder 8s infinite ease-in-out;cursor:crosshair;transform-style:preserve-3d;perspective:1000px}.profile-wrapper::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,0.25) 50%),linear-gradient(90deg,rgba(255,51,0,0.06),rgba(255,153,0,0.02),rgba(255,0,0,0.06));background-size:100% 4px,3px 100%;z-index:9999;pointer-events:none;opacity:0.4}@keyframes pulseBorder{0%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}50%{border-color:var(--accent);box-shadow:0 0 30px rgba(255,153,0,0.5),inset 0 0 20px rgba(255,153,0,0.3)}100%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}}@keyframes pulseBlink{0%,100%{opacity:0.2}50%{opacity:1}}@keyframes sunsetGlow{0%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}50%{border-color:#ff9900;box-shadow:0 0 25px rgba(255,153,0,0.7)}100%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}}.tactical-divider{display:flex;align-items:center;justify-content:center;margin:20px 0;clear:both}.tactical-divider::before{content:"";flex-grow:1;height:2px;background:linear-gradient(90deg,transparent,var(--primary),var(--accent),transparent);background-size:200% 100%;animation:flowRight 3s linear infinite}.tactical-divider::after{content:"";flex-grow:1;height:2px;background:linear-gradient(270deg,transparent,var(--primary),var(--accent),transparent);background-size:200% 100%;animation:flowLeft 3s linear infinite}.tactical-divider span{color:var(--accent);padding:0 15px;font-weight:bold;font-size:14px;letter-spacing:4px;text-shadow:0 0 8px var(--accent);display:inline-block;animation:float-pulse 3s ease-in-out infinite}.tactical-panel{background:var(--panel-bg);border:1px solid rgba(255,51,0,0.2);border-left:4px solid var(--primary);border-radius:4px;padding:12px;margin-bottom:15px;box-sizing:border-box;backdrop-filter:blur(8px);position:relative;overflow:hidden;transform-style:preserve-3d;transition:all 0.4s cubic-bezier(0.25,0.8,0.25,1)}.tactical-panel::before{content:"";position:absolute;top:-100%;left:-100%;width:50%;height:300%;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.05),rgba(255,255,255,0));transform:rotate(45deg);transition:all 0.6s}.tactical-panel:hover::before{top:100%;left:100%}.tactical-panel:hover{border-color:var(--accent);background:rgba(25,5,0,0.92);transform:translateY(-5px) scale(1.02);box-shadow:0 10px 30px rgba(255,153,0,0.2),inset 0 0 15px rgba(255,51,0,0.3)}.panel-title{font-size:13px;font-weight:bold;color:#fff;text-transform:uppercase;border-bottom:1px solid rgba(255,51,0,0.3);padding-bottom:5px;margin-bottom:10px;letter-spacing:1px;text-shadow:0 0 5px var(--primary);display:flex;align-items:center}.panel-title span{color:var(--accent);margin-right:8px;font-size:16px;text-shadow:0 0 5px var(--accent)}.tactical-list{list-style:none;padding:0;margin:0}.tactical-list li{padding:5px 0;border-bottom:1px dashed rgba(255,51,0,0.15);font-size:12px;line-height:1.4;transition:all 0.2s ease-in-out}.tactical-list li:hover{transform:translateX(5px);color:#fff;background:rgba(255,51,0,0.1);border-radius:4px;padding-left:5px;border-bottom-color:transparent}.tactical-list li:last-child{border-bottom:none}.tactical-badge{font-weight:bold;color:#fff;margin-right:5px}.tactical-link{color:var(--accent);text-decoration:none;transition:color 0.2s;font-weight:bold}.tactical-link:hover{color:#fff;text-decoration:underline;text-shadow:0 0 8px var(--accent)}.flex-row{display:flex;flex-wrap:wrap;gap:12px;width:100%;box-sizing:border-box}.flex-col{flex:1 1 250px;min-width:250px;box-sizing:border-box}.stat-box{background:rgba(0,0,0,0.7);border:1px solid rgba(255,51,0,0.15);padding:10px;border-radius:4px;text-align:center;box-sizing:border-box;position:relative;overflow:hidden;z-index:1;transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.stat-box::after{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1;transition:transform 0.4s ease}.stat-box.green::after{bottom:0;background:linear-gradient(0deg,rgba(0,255,102,0.25),transparent);transform:translateY(100%)}.stat-box.red::after{top:0;background:linear-gradient(180deg,rgba(255,0,60,0.25),transparent);transform:translateY(-100%)}.stat-box.green:hover::after,.stat-box.red:hover::after{transform:translateY(0)}.stat-box:hover{transform:translateY(-4px);box-shadow:0 8px 15px rgba(0,0,0,0.6)}.stat-box.green:hover{border-color:var(--green);box-shadow:0 8px 20px rgba(0,255,102,0.2)}.stat-box.red:hover{border-color:var(--red);box-shadow:0 8px 20px rgba(255,0,60,0.2)}.stat-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.stat-value{font-size:14px;font-weight:bold}.stat-value.green{color:var(--green);text-shadow:0 0 5px var(--green)}.stat-value.red{color:var(--red);text-shadow:0 0 5px var(--red)}.tactical-video-container{margin:0 auto 20px auto;width:100%;max-width:600px;background:#000;padding:6px;border:2px solid var(--primary);border-radius:6px;box-sizing:border-box;animation:sunsetGlow 4s infinite ease-in-out}@keyframes glitch-anim{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}.glitch-hover{transition:all 0.2s}.glitch-hover:hover{animation:glitch-anim 0.25s infinite;text-shadow:2px 0 var(--accent),-2px 0 var(--red)!important}@keyframes float-pulse{0%,100%{transform:translateY(0);text-shadow:0 0 8px var(--accent)}50%{transform:translateY(-4px);text-shadow:0 0 20px var(--accent),0 0 30px var(--primary)}}@keyframes flowRight{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes flowLeft{0%{background-position:-100% 0}100%{background-position:100% 0}}@keyframes topGlow{0%{box-shadow:0 0 15px rgba(128,0,0,0.6)}100%{box-shadow:0 0 25px rgba(255,153,0,0.8)}}.top-gif-wrapper{padding:3px;background:linear-gradient(to right,#8b0000,#ff8c00);border-radius:8px;display:inline-block;margin:0 auto 10px auto;animation:topGlow 3s infinite alternate}@keyframes sweepCrimsonPulse{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.bottom-pulse-wrapper{padding:4px;background:linear-gradient(90deg,#ff3300,#4a0000,#ff3300);background-size:200% 200%;animation:sweepCrimsonPulse 3s infinite ease-in-out;border-radius:8px;display:inline-block;box-shadow:inset 0 0 10px rgba(0,0,0,0.6)}.hover-pop{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-pop:hover{transform:scale(1.03);box-shadow:0 0 25px var(--primary)!important;z-index:10}.hover-lift{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-lift:hover{transform:translateY(-5px);border-color:var(--accent)!important;box-shadow:0 10px 20px rgba(0,0,0,0.7)}.history-line{transition:all 0.2s}.history-line:hover{padding-left:18px!important;background:rgba(255,51,0,0.1);border-left-color:var(--accent)!important}.policy-box{transition:all 0.3s}.policy-box:hover{transform:scale(1.02);box-shadow:inset 0 0 20px rgba(255,51,0,0.3),0 10px 20px rgba(0,0,0,0.7)}@media only screen and (max-width:768px){body>div:first-of-type,.profile-wrapper{max-width:100%!important;margin:0!important;padding:10px!important}.flex-col,div[style*="min-width:250px"],div[style*="min-width: 250px"]{width:100%!important;min-width:100%!important;flex:0 1 auto!important;height:auto!important}.flex-row,div[style*="gap:12px"]{flex-direction:column!important;height:auto!important}.stat-box{height:auto!important;margin-bottom:8px}}</style></head><body><div class="profile-wrapper"><div style="background:rgba(0,0,0,0.85);border:1px solid var(--primary);border-radius:6px;padding:15px;text-align:center;margin-bottom:15px;box-sizing:border-box;"><div class="top-gif-wrapper"><img src="https://politicsandwar.com/uploads/c9347ccf6960ac653d612c4202d74ffc03f0ff89x871.gif" style="display:block;border-radius:5px;max-width:100%;box-sizing:border-box;"></div><div style="font-size:18px;font-weight:bold;color:#ffffff;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;line-height:1.3;word-wrap:break-word;text-shadow:0 0 8px var(--primary);" class="glitch-hover">"The Sky Surely Looks Nice Today, Ain't It?"</div><div style="font-size:12px;font-style:italic;color:#ffdac2;letter-spacing:1px;font-weight:bold;" class="glitch-hover">Welcome! We are the Crimson (Chaotic &amp; EQUINOX) Nation, a force to be reckoned with.</div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div class="flex-row"><div class="flex-col"><div class="tactical-panel" style="margin-bottom:0;"><div class="panel-title"><span>❖</span> Rare Badges &amp; Recognition</div><ul class="tactical-list"><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Drake Killer</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> 300</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Spook Distributor</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Halloween 2024 Artistic Participant</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Eggcellent</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Mar '25 Tourney</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Conch Republic</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Octopus</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Blackbeard</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Back In My Day</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Destroyed 100k Total Infra! <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Sep/21/2025)</span></li><li><span class="tactical-badge" style="color:var(--red)">[!]</span> Banned From Chimera's Financial &amp; Banking Discord Server!</li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Pumpkin Participant 2025 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Dec/27/2025 05:22 AM. 41st row)</span></li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> PNW Santa 25 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Dec/29/2025 09:05 AM. 14th row) [Thanks Khadgar ^-^]</span></li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Perfect 4,000.0 Nation Score <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Somewhere Between Day 494)</span></li><li><span class="tactical-badge" style="color:var(--accent)">◇</span> Reached 500 Days Since Nation Creation!</li></ul></div></div><div class="flex-col"><div class="tactical-panel" style="margin-bottom:0;"><div class="panel-title"><span>❖</span> Proud Achievements Log</div><ul class="tactical-list"><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Anti-Proliferation</li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Golden Treasures 2025</li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Nuclear Capable <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Jul/02/2025 07:09 AM)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Coolest Day: 256 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Nothing happened, lul)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Jul/22/2025, 6:07 AM, MANGO DAY.</li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Coolest Day: 420 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(sum regular stuff happened, :p)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> 10K Page Visits. <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Nov/06/2025)</span></li><li><span class="tactical-badge" style="color:var(--green)">◆</span> Achieved Airstrike Immense Triumph at Around 1% or Below Chance Blindly Against Corinth. <span style="color:var(--text-muted);font-size:10px;">(Mar/29/2026 09:18 AM)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Golden Treasures 2026</li><li><span class="tactical-badge" style="color:var(--green)">◆</span> Achieved Ground Attack Immense Triumph at Around 0.5% or Below Chance Blindly Again Against Queendom of Azuria. <span style="color:var(--text-muted);font-size:10px;">(Apr/27/2026 12:44 AM)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆ Achieved Ground Attack Immense Triumph at LITERALLY 0% Chance Against East Anglia.</span> I Had a 93.5% of Utter Failure, 6.5% Pyrrhic Victory, 0% Moderate Success and 0% Immense Triumph. I be rolling like I have a 6 clover leaf In my nation. <span style="color:var(--text-muted);font-size:10px;">(May/12/2026 10:33 AM)</span></li><li><span class="tactical-badge" style="color:var(--green)">◆ Achieved '3 In a Row' Ground Attack's Immense Triumph's</span> at 1.4%, 1.8%, 2.8% Chance's Against East Anglia Again.. what? <span style="color:var(--text-muted);font-size:10px;">(May/13/2026 02:38 AM)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Lauded <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(May/29/2026 12:39 AM) (Commended By 50 Nations)</span></li><li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Founder <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Jun/11/2026 02:11 PM) [Unlocked Achievement: 'Founder' (Create an Alliance)]</span></li></ul></div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div class="tactical-panel"><div class="panel-title"><span>❖</span> Combat Deployment History</div><div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift"><div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">01</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Operation Scorched Rose <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[Finished Major War]</span></span></div><div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> DFL / CLG Only + Allies × Cam × Sam vs. Rose + TFP.<br><strong style="color:#ffffff;">Note:</strong> Did It Mostly With Missiles :P</div><div class="flex-row"><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box green"><div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div><div class="stat-value green">2.63 Billion</div><div style="font-size:10px;color:rgba(0,255,157,0.8);font-style:italic;margin-top:2px;position:relative;z-index:2;">#1 Damager in DFL</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box red"><div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div><div class="stat-value red">1.27 Billion</div></div></div></div></div><div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift"><div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">02</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Fire Is In The Air Tonight <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[In The Air Tonight - Finished Micro War]</span></span></div><div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only + Allies × CyberTr0n × TCO vs. LobotomyCorp + The Willing.<br><strong style="color:#ffffff;">Note:</strong> "The Fire Didn't Kill The Lily; It Just Cleared The Path For It To Bloom"</div><div class="flex-row"><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box green"><div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div><div class="stat-value green">~1.88 Billion</div><div style="font-size:10px;color:rgba(0,255,157,0.8);font-style:italic;margin-top:2px;position:relative;z-index:2;">2nd in T.R.F vs Willing | #4 Aero Bloc</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box red"><div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div><div class="stat-value red">300.1 Million</div></div></div></div></div><div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift"><div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">03</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Sugar Burn <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[Operation Candy Crush - Finished Micro War]</span></span></div><div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only + Allies vs. Candy Kingdom.<br><strong style="color:#ffffff;">Note:</strong> Physics is simple. Fire melts candy. See you on the battlefield.</div><div class="flex-row"><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box green"><div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div><div class="stat-value green">136.2 Million</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box red"><div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div><div class="stat-value red">175.2 Million</div></div></div></div></div><div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;box-sizing:border-box;" class="hover-lift"><div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">04</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Op Epic Fury - Global War 36 <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[GW War - Excluded from Grand Total]</span></span></div><div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only vs. EvH + ASC + SV (Shadow Valley).<br><strong style="color:#ffffff;">Note:</strong> "War is a fire that doesn't stop until it runs out of things to burn, including us. and this doesn't count towards grand total btw."</div><div class="flex-row"><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box green"><div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div><div class="stat-value green">292.6 Million</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box red"><div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div><div class="stat-value red">533.6 Million</div></div></div></div></div></div><div class="hover-pop" style="background:rgba(5,20,10,0.85);border:1px solid #00ff66;border-left:4px solid #00ff66;border-radius:4px;padding:15px;margin-bottom:15px;box-sizing:border-box;box-shadow:0 0 20px rgba(0,255,102,0.15);"><div style="font-size:14px;font-weight:bold;color:#00ff66;text-transform:uppercase;border-bottom:1px solid #00ff66;padding-bottom:6px;margin-bottom:12px;"><span style="color:#00ff66;margin-right:6px;">►</span> THE GRAND TOTAL OF FINISHED CAMPAIGNS</div><div class="flex-row" style="margin-bottom:12px;width:100%;box-sizing:border-box;"><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box" style="border-color:#004a1c;"><div class="stat-label">Total Dealt</div><div class="stat-value green">4.51 BILLION</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box" style="border-color:#4a000c;"><div class="stat-label">Total Lost</div><div class="stat-value red">1.57 BILLION</div></div></div><div class="flex-col" style="flex:1 1 120px;"><div class="stat-box" style="border-color:#004a1c;"><div class="stat-label">Net Damage</div><div class="stat-value green">+2.94 BILLION</div></div></div></div><div style="background:rgba(0,255,102,0.1);border:1px dashed #00ff66;padding:15px;border-radius:4px;text-align:center;box-sizing:border-box;box-shadow:inset 0 0 15px rgba(0,255,102,0.1);"><div style="font-size:12px;color:#ffffff;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Overall Efficiency Ratio</div><div style="font-size:26px;font-weight:bold;color:#00ff66;text-shadow:0 0 15px #00ff66;animation:pulseBlink 2s infinite">2.87</div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div class="flex-row"><div class="flex-col"><div class="tactical-panel"><div class="panel-title"><span>❖</span> Alliance History Registry</div><div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Valyrian Order</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">First AA | Joined Day 16-17? – Dec/2024</div></div><div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Dawnfire Legion</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Jan/2025 – Jul/2025 | 3-4th Merge Event from VYO</div></div><div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Camelot</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Jul/18/2025 – Aug/20/2025 | DFL Merged with CL</div></div><div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">The Reclaimed Flame</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Aug/20/2025 – Jun/11/2026 | Micro AA</div></div><div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--accent);"><div style="font-weight:bold;color:#ffffff;font-size:13px;text-shadow:0 0 5px var(--accent);">Blue Archive Kivotos Academies</div><div style="font-size:11px;color:var(--accent);margin-top:4px;font-weight:bold;">Jun/11/2026 – Current | [TesterLan Created This Alliance First!]</div></div><div style="padding-left:12px;border-left:2px dashed var(--text-muted);"><div style="font-weight:bold;color:var(--text-muted);font-size:13px;">Pending...</div><div style="font-size:11px;color:#ab958e;margin-top:4px;">??? – ???</div></div></div></div><div class="flex-col"><div class="tactical-panel"><div class="panel-title"><span>❖</span> System Status Registry &amp; Misc</div><ul class="tactical-list"><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Alliance Loyalty:</strong> <span style="color:#f5ecea;">Loyal Till The End (Soul of the Varangian Guard)</span></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Current Lore:</strong> <span style="color:var(--accent);font-weight:bold;text-shadow:0 0 5px var(--accent);">"Grail of The High Tech Era" Mass Economic Recovery (C25)</span></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Economic Status:</strong> <span style="color:var(--yellow);">Enhancing Economic Prowess</span></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Economic Policy:</strong> <span style="color:#f5ecea;">Moderate Right</span></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Custom Anthem:</strong> <a href="https://youtu.be/O2ILOw06g40" class="tactical-link" target="_blank">Trap Queen Anthem (1738)</a></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Defense Music:</strong> <a href="https://youtu.be/FL9ocieCNjM" class="tactical-link" target="_blank">Before Every Hit</a></li><li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Situational Music:</strong> <a href="https://music.youtube.com/watch?v=YedGOBFTShc&si=lh1R2ogRABuMVKDW" class="tactical-link" target="_blank">My Deteriorating Braincells</a></li><li style="padding:6px 0;font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Flags Directory:</strong> <a href="https://crimsonlandguardian.straw.page" class="tactical-link" style="color:var(--green);font-weight:bold;text-shadow:0 0 5px var(--green);" target="_blank">Crimson Hall of Flags</a></li></ul></div></div></div><div class="tactical-panel"><div class="panel-title"><span>❖</span> NATION ERA'S REGISTRY</div><div style="display:flex;flex-wrap:wrap;gap:10px;width:100%;box-sizing:border-box;"><div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">1. Depression Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Rapidly built 5-6 cities, lost 3-4M daily revenue. Evolved to Absolute Monarchy for cultural revolution, city building &amp; economy. (C16-19)</div></div><div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--accent);font-size:12px;margin-bottom:4px;text-transform:uppercase;">2. Absolute Monarchy</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Stabilization period. (C20)</div></div><div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">3. Stratocracy X AM</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Remilitarization phase. (C22)</div></div><div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">4. Remastered Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">National Recovery. (C23)</div></div><div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">5. Destroyer Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Nation Wide War. (C24)</div></div><div class="hover-pop" style="flex:1 1 160px;background:rgba(25,5,0,0.9);border:1px solid var(--accent);padding:10px;border-radius:4px;box-sizing:border-box;box-shadow:0 0 15px rgba(255,153,0,0.3);"><div style="font-weight:bold;color:#ffffff;font-size:13px;margin-bottom:4px;text-transform:uppercase;text-shadow:0 0 5px var(--accent);">6. Grail of The High Tech Era [Active]</div><div style="font-size:11px;color:#ffffff;line-height:1.4;font-style:italic;">Mass Economic Recovery. (C25)</div></div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div class="tactical-panel"><div class="panel-title"><span>❖</span> CLG'Z TOTALLY NECESSARY POLICIES</div><div class="flex-row" style="align-items:flex-start;"><div class="flex-col"><div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;height:100%;"><div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🏴 RAID POLICY</div><ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;"><li style="margin-bottom:6px;">Targets nations inactive for over one—two weeks.</li><li style="margin-bottom:6px;">Raids alliance members and applicants for resources, particularly those who don't actively defend or counter.</li><li style="margin-bottom:6px;">We will not attack counters unless they initiate further aggression or are identified as a continued threat like espionage. <span style="color:var(--yellow);">(Retaliation Includes Nuking And Missiles, Maximum of 2-3 Attacks And Ill Start Fighting Back)</span></li><li style="margin-bottom:6px;">Peace terms are negotiable, but expect to pay your dues. <span style="color:var(--red);font-style:italic;">(If you just leave me on no message then you suck)</span></li><li style="color:var(--yellow);font-weight:bold;list-style-type:none;margin-top:10px;text-shadow:0 0 5px var(--yellow);">↓ EXCEPTION: If I'm Under 900 Infra or The Target Is Stacked With Loot — Then I'm Hitting Back However I Want.</li></ul></div></div><div class="flex-col" style="display:flex;flex-direction:column;gap:12px;"><div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🛡️ DEFENSE POLICY</div><ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;"><li style="margin-bottom:6px;">Any attack on our nation will be met with immediate and comprehensive retaliation.</li><li style="margin-bottom:6px;">This applies to all aggressors, counter-guys not included, Unless They Keep Attacking and or ILLEGAL. <span style="color:var(--yellow);">(If you, for whatever reason keep stalling without attacking me and I reach max 12 MAPS, I am going to do my retaliation regardless.)</span></li><li style="margin-bottom:6px;">We do not tolerate unprovoked attacks.</li><li style="color:var(--red);font-weight:bold;list-style-type:none;margin-top:8px;text-shadow:0 0 5px var(--red);">↓ Summary for dummies: Attacking us is a financial decision. Make sure you can afford it.</li></ul></div><div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🤝 COMMENDATIONS &amp; DENOUNCEMENTS</div><ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;"><li style="margin-bottom:6px;">Commend me = I Commend u. Denounce me = I Denounce you. I will Commend You, If ur Nation Looks Cool Plus Impressive—(or if you Commended me).</li><li style="margin-bottom:0;">I might occasionally go ahead on a commendation spree to find nations with a good aesthetic. 👀</li></ul></div></div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div style="background:rgba(25,10,2,0.85);border:1px solid #802b00;border-left:4px solid #ff9900;border-radius:4px;padding:15px;margin-bottom:15px;box-sizing:border-box;"><div style="background:linear-gradient(135deg,rgba(40,15,5,0.9),rgba(15,5,0,0.9));border:1px solid #ff9900;border-radius:6px;padding:15px;text-align:center;margin-bottom:15px;box-sizing:border-box;box-shadow:0 0 25px rgba(255,153,0,0.3);"><div style="font-size:18px;font-weight:bold;color:#ff9900;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;" class="glitch-hover">🎨 SPECIAL NATION FLAG COMMISSION! 🎨</div><div style="display:inline-block;padding:6px 14px;border-radius:4px;font-weight:bold;font-size:12px;text-transform:uppercase;background:rgba(0,255,102,0.15);color:#00ff66;border:1px solid #00ff66;box-shadow:0 0 15px rgba(0,255,102,0.4);margin-bottom:10px;animation:pulseBlink 3s infinite">STATUS: OPEN | Weekly Slots: {0}/3</div><div style="font-size:11px;color:#ffcc00;font-style:italic;">&lt; (im not updating tis gng) &gt;</div></div><div class="hover-lift" style="background:rgba(0,0,0,0.7);border:1px dashed #ff9900;padding:15px;border-radius:4px;margin-bottom:15px;text-align:center;box-sizing:border-box;"><div style="font-size:11px;color:#ab958e;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">The 1-Month Special Menu (Available until April 15, DM In Discord or In-game)</div><div style="font-size:16px;font-weight:bold;color:#ffffff;margin-bottom:6px;">The Casual/Complex Static Flag</div><div style="font-size:24px;font-weight:bold;color:#00ff66;margin-bottom:8px;text-shadow:0 0 10px #00ff66;">$10,700,000 ($10.7M)</div><div style="font-size:11px;color:#ab958e;font-style:italic;">[A complex or casual non-animated nation flag with your personal aesthetic.]</div></div><div class="flex-row" style="margin-bottom:15px;"><div class="flex-col" style="flex:1 1 250px;background:rgba(0,0,0,0.7);border:1px solid #802b00;padding:12px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:#ff9900;border-bottom:1px solid #802b00;padding-bottom:6px;margin-bottom:10px;font-size:12px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px #ff9900;">📋 THE WORK PROTOCOL</div><ol style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;"><li style="margin-bottom:6px;"><strong style="color:#ffffff;">Limited Slots:</strong> I can only take 3 Nation Flag Orders a Week. First come, First served. Slots reset every Monday.</li><li style="margin-bottom:6px;"><strong style="color:#ffffff;">Payment Flow:</strong> Payment MUST Be received In-game after I show you the finished watermarked preview, If ya want ur unwatermarked finished flag.</li><li style="margin-bottom:6px;"><strong style="color:#ffffff;">Details Matter:</strong> Please do provide a clear description, colors, and any specific symbols you want included. Strictly no prohibited imagery that violates P&W rules.</li><li style="margin-bottom:6px;"><strong style="color:#ffffff;">Turnaround Time:</strong> Expect 2-3 Days Per One Flag Depending on Complexity. <span style="color:#00ff66;font-style:italic;text-shadow:0 0 3px #00ff66;">(Faster If Casual 👀)</span></li><li style="margin-bottom:0;"><strong style="color:#ffffff;">Limit:</strong> 1 Flag per individual per week. If you need a second flag, you'll have to wait until next week.</li></ol></div><div class="flex-col" style="flex:1 1 250px;background:rgba(0,0,0,0.7);border:1px solid #802b00;padding:12px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:#ff9900;border-bottom:1px solid #802b00;padding-bottom:6px;margin-bottom:10px;font-size:12px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px #ff9900;">⚡ THE RESPECT—THE—HUSTLE RULES</div><ol style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;"><li style="margin-bottom:8px;"><strong style="color:#ffffff;">The 'Sketch' Approval &amp; Stages:</strong> I send u a basic-ish static version first. Once you say "Yes go on", I start final finishings. Major layout changes after this stage will cost an extra <span style="color:#00ff66;font-weight:bold;text-shadow:0 0 3px #00ff66;">$7,000,000 ONCE.</span></li><li style="margin-bottom:8px;"><strong style="color:#ffffff;">The 'Seven-Strike' Policy:</strong> You get 7 Free Revisions (minor tweaks). Starting at the 8th Revision, It's <span style="color:#00ff66;font-weight:bold;text-shadow:0 0 3px #00ff66;">$5,000,000</span> per change.</li><li style="margin-bottom:0;"><strong style="color:#ffffff;">The "No Re-Draw" Clause:</strong> A revision is a tweak, not a whole new flag. If you want a completely different concept halfway through, you have to pay the full price again and wait for a new slot.</li></ol></div></div><div style="background:rgba(0,0,0,0.85);border:1px solid #ff9900;border-radius:4px;padding:15px;text-align:center;box-sizing:border-box;box-shadow:0 0 20px rgba(255,153,0,0.25);"><div style="font-size:14px;color:#ffffff;margin-bottom:12px;">Refer To <span style="color:#ffcc00;font-style:italic;">Testerz—Alter—Ego's</span> <a href="https://discord.com/users/testerz.alter.ego" class="tactical-link" style="color:#ff3300;text-shadow:0 0 8px #ff3300;font-weight:bold;font-size:16px;" target="_blank">[Discord]</a> &lt; To Order.</div><div style="border-top:1px dashed #802b00;padding-top:15px;"><div style="font-size:14px;font-weight:bold;color:#ff9900;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;text-shadow:0 0 10px #ff9900;">🏆 Hall of Fame</div><div style="font-size:10px;color:#ab958e;margin-bottom:10px;text-transform:uppercase;">Individuals Who Ordered a Flag <span style="text-transform:none;">(Optional To Be Here Btw &amp; Lasts until July 11th)</span></div><div style="font-size:12px;color:#f5ecea;line-height:1.6;"><strong style="color:#ffffff;">1.</strong> Nation: RyLand | Himanshu Barhath<br><strong style="color:#ffffff;">2.</strong> Nation: Khanate of Khadgar | Kalepo Waing</div></div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div class="flex-row" style="margin-bottom:15px;width:100%;box-sizing:border-box;"><div class="hover-lift" style="flex:1 1 250px;min-width:250px;background:rgba(25,10,2,0.85);border:1px solid #804c00;border-left:4px solid #ffcc00;border-radius:4px;padding:12px;box-sizing:border-box;box-shadow:inset 0 0 20px rgba(255,204,0,0.15);"><div style="font-size:14px;font-weight:bold;color:#ffcc00;text-transform:uppercase;border-bottom:1px solid rgba(255,204,0,0.5);padding-bottom:6px;margin-bottom:10px;text-shadow:0 0 8px #ffcc00;"><span>❖</span> Permanent Hall of Fame 🏆</div><div style="padding:6px 0;word-wrap:break-word;"><strong style="color:#ffffff;font-size:13px;">Kolvlocksland | Zenko</strong><div style="font-size:11px;color:#ab958e;font-style:italic;margin-top:4px;line-height:1.4;">[Willingly Became my alter ego's Victim In P&amp;W discord server. Apr/09/2026 7:57 PM]</div></div></div><div class="hover-lift" style="flex:1 1 250px;min-width:250px;background:rgba(10,5,2,0.85);border:1px solid #4d1a00;border-left:4px solid #ab958e;border-radius:4px;padding:12px;box-sizing:border-box;box-shadow:inset 0 0 15px rgba(100,50,30,0.15);"><div style="font-size:14px;font-weight:bold;color:#ab958e;text-transform:uppercase;border-bottom:1px solid rgba(120,80,60,0.5);padding-bottom:6px;margin-bottom:10px;letter-spacing:1px;"><span>❖</span> Permanent Hall of Bums 🎼</div><div style="padding:6px 0;word-wrap:break-word;"><strong style="color:#ab958e;font-size:13px;text-decoration:line-through;">Bryantplux Empire | Brypony</strong><div style="font-size:11px;color:#ab958e;font-style:italic;margin-top:4px;line-height:1.4;">[Willingly Became a Bum for replying "poopoo" to alter ego's "yo im evil." In P&amp;W discord server. Apr/09/2026 8:07 PM]</div></div></div></div><div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div><div style="background:rgba(20,5,2,0.85);border:1px solid #800000;border-left:4px solid #ff3300;border-radius:4px;padding:20px;text-align:center;box-sizing:border-box;box-shadow:inset 0 0 30px rgba(255,51,0,0.2);"><div style="font-size:12px;color:#ff3300;font-weight:bold;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;animation:pulseBlink 1.5s infinite">Real-Time Note:</div><p style="font-style:italic;font-size:15px;color:#ffffff;line-height:1.5;margin:0 0 20px 0;word-wrap:break-word;text-shadow:0 0 8px var(--accent);" class="glitch-hover">"I HAVE SUPER IMPROVED MY DESCRIPTION I HOPE YOUR HAPPY!"</p><div class="tactical-video-container"><iframe src="https://www.youtube.com/embed/V4elF7---KQ?autoplay=0" style="width:100%;aspect-ratio:16/9;border:none;display:block;" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen="true"></iframe></div><div class="bottom-pulse-wrapper"><img src="https://politicsandwar.com/uploads/f359e3dfbade92da921bbe882fa064a9b9b3a8d5x411.gif" style="display:block;border-radius:4px;max-width:100%;box-sizing:border-box;"></div></div></div></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Crimson Land-Guard</title><style>html,body{margin:0;padding:0;background-color:#0a0302;color:#f5ecea;font-family:'Consolas','Courier New',monospace}::selection{background:#ff3300;color:#fff;text-shadow:none}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#0a0302}::-webkit-scrollbar-thumb{background:#ff3300;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#ff9900}:root{--primary:#ff3300;--primary-dark:#800000;--accent:#ff9900;--accent-dark:#cc5200;--bg:#0a0302;--panel-bg:rgba(18,5,2,0.88);--text:#f5ecea;--text-muted:#ab958e;--green:#00ff66;--red:#ff003c;--yellow:#ffcc00}.profile-wrapper{position:relative;background-image:linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)),url('assets/IKuyoCrimson.jpg');background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;border:3px solid var(--primary-dark);border-radius:12px;padding:20px;max-width:980px;margin:20px auto;box-sizing:border-box;overflow:hidden;animation:pulseBorder 8s infinite ease-in-out;cursor:crosshair;transform-style:preserve-3d;perspective:1000px}.profile-wrapper::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,0.25) 50%),linear-gradient(90deg,rgba(255,51,0,0.06),rgba(255,153,0,0.02),rgba(255,0,0,0.06));background-size:100% 4px,3px 100%;z-index:9999;pointer-events:none;opacity:0.4}@keyframes pulseBorder{0%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}50%{border-color:var(--accent);box-shadow:0 0 30px rgba(255,153,0,0.5),inset 0 0 20px rgba(255,153,0,0.3)}100%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}}@keyframes pulseBlink{0%,100%{opacity:0.2}50%{opacity:1}}@keyframes sunsetGlow{0%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}50%{border-color:#ff9900;box-shadow:0 0 25px rgba(255,153,0,0.7)}100%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}}.tactical-divider{display:flex;align-items:center;justify-content:center;margin:20px 0;clear:both}.tactical-divider::before,.tactical-divider::after{content:"";flex-grow:1;height:2px;background:linear-gradient(90deg,transparent,var(--primary),var(--accent),transparent);background-size:200% 100%;animation:flowRight 3s linear infinite}.tactical-divider::after{transform:scaleX(-1)}.tactical-divider span{color:var(--accent);padding:0 15px;font-weight:bold;font-size:14px;letter-spacing:4px;text-shadow:0 0 8px var(--accent);display:inline-block;animation:float-pulse 3s ease-in-out infinite}.tactical-panel{background:var(--panel-bg);border:1px solid rgba(255,51,0,0.2);border-left:4px solid var(--primary);border-radius:4px;padding:12px;margin-bottom:15px;box-sizing:border-box;backdrop-filter:blur(8px);position:relative;overflow:hidden;transform-style:preserve-3d;transition:all 0.4s cubic-bezier(0.25,0.8,0.25,1)}.tactical-panel::before{content:"";position:absolute;top:-100%;left:-100%;width:50%;height:300%;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.05),rgba(255,255,255,0));transform:rotate(45deg);transition:all 0.6s}.tactical-panel:hover::before{top:100%;left:100%}.tactical-panel:hover{border-color:var(--accent);background:rgba(25,5,0,0.92);transform:translateY(-5px) scale(1.02);box-shadow:0 10px 30px rgba(255,153,0,0.2),inset 0 0 15px rgba(255,51,0,0.3)}.panel-title{font-size:13px;font-weight:bold;color:#fff;text-transform:uppercase;border-bottom:1px solid rgba(255,51,0,0.3);padding-bottom:5px;margin-bottom:10px;letter-spacing:1px;text-shadow:0 0 5px var(--primary);display:flex;align-items:center}.panel-title span{color:var(--accent);margin-right:8px;font-size:16px;text-shadow:0 0 5px var(--accent)}.tactical-list{list-style:none;padding:0;margin:0}.tactical-list li{padding:5px 0;border-bottom:1px dashed rgba(255,51,0,0.15);font-size:12px;line-height:1.4;transition:all 0.2s ease-in-out}.tactical-list li:hover{transform:translateX(5px);color:#fff;background:rgba(255,51,0,0.1);border-radius:4px;padding-left:5px;border-bottom-color:transparent}.tactical-list li:last-child{border-bottom:none}.tactical-badge{font-weight:bold;color:#fff;margin-right:5px}.tactical-link{color:var(--accent);text-decoration:none;transition:color 0.2s;font-weight:bold}.tactical-link:hover{color:#fff;text-decoration:underline;text-shadow:0 0 8px var(--accent)}.flex-row{display:flex;flex-wrap:wrap;gap:12px;width:100%;box-sizing:border-box}.flex-col{flex:1 1 250px;min-width:250px;box-sizing:border-box}.stat-box{background:rgba(0,0,0,0.7);border:1px solid rgba(255,51,0,0.15);padding:10px;border-radius:4px;text-align:center;box-sizing:border-box;position:relative;overflow:hidden;z-index:1;transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.stat-box.green{background:linear-gradient(0deg,rgba(0,255,102,0.08),rgba(0,0,0,0.7) 60%);border-color:rgba(0,255,102,0.3)}.stat-box.red{background:linear-gradient(180deg,rgba(255,0,60,0.08),rgba(0,0,0,0.7) 60%);border-color:rgba(255,0,60,0.3)}.stat-box::after{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1;transition:transform 0.4s ease}.stat-box.green::after{bottom:0;background:linear-gradient(0deg,rgba(0,255,102,0.25),transparent);transform:translateY(100%)}.stat-box.red::after{top:0;background:linear-gradient(180deg,rgba(255,0,60,0.25),transparent);transform:translateY(-100%)}.stat-box.green:hover::after,.stat-box.red:hover::after{transform:translateY(0)}.stat-box:hover{transform:translateY(-4px);box-shadow:0 8px 15px rgba(0,0,0,0.6)}.stat-box.green:hover{transform:translateY(-4px);border-color:var(--green)!important;box-shadow:0 8px 20px rgba(0,255,102,0.2)}.stat-box.red:hover{transform:translateY(4px);border-color:var(--red)!important;box-shadow:0 -8px 20px rgba(255,0,60,0.2)}.stat-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.stat-value{font-size:14px;font-weight:bold}.stat-value.green{color:var(--green);text-shadow:0 0 5px var(--green)}.stat-value.red{color:var(--red);text-shadow:0 0 5px var(--red)}.tactical-video-container{margin:0 auto 20px auto;width:100%;max-width:600px;background:#000;padding:6px;border:2px solid var(--primary);border-radius:6px;box-sizing:border-box;animation:sunsetGlow 4s infinite ease-in-out}@keyframes glitch-anim{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}.glitch-hover{transition:all 0.2s}.glitch-hover:hover{animation:glitch-anim 0.25s infinite;text-shadow:2px 0 var(--accent),-2px 0 var(--red)!important}@keyframes float-pulse{0%,100%{transform:translateY(0);text-shadow:0 0 8px var(--accent)}50%{transform:translateY(-4px);text-shadow:0 0 20px var(--accent),0 0 30px var(--primary)}}@keyframes flowRight{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes topGlow{0%{box-shadow:0 0 15px rgba(128,0,0,0.6)}100%{box-shadow:0 0 25px rgba(255,153,0,0.8)}}.top-gif-wrapper{padding:3px;background:linear-gradient(to right,#8b0000,#ff8c00);border-radius:8px;display:inline-block;margin:0 auto 10px auto;animation:topGlow 3s infinite alternate}@keyframes sweepCrimsonPulse{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.bottom-pulse-wrapper{padding:4px;background:linear-gradient(90deg,#ff3300,#4a0000,#ff3300);background-size:200% 200%;animation:sweepCrimsonPulse 3s infinite ease-in-out;border-radius:8px;display:inline-block;box-shadow:inset 0 0 10px rgba(0,0,0,0.6)}.hover-pop{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-pop:hover{transform:scale(1.03);box-shadow:0 0 25px var(--primary)!important;z-index:10}.hover-lift{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-lift:hover{transform:translateY(-5px);border-color:var(--accent)!important;box-shadow:0 10px 20px rgba(0,0,0,0.7)}.history-line{transition:all 0.2s}.history-line:hover{padding-left:18px!important;background:rgba(255,51,0,0.1);border-left-color:var(--accent)!important}.policy-box{transition:all 0.3s}.policy-box:hover{transform:scale(1.02);box-shadow:inset 0 0 20px rgba(255,51,0,0.3),0 10px 20px rgba(0,0,0,0.7)}@media only screen and (max-width:768px){body>div:first-of-type,.profile-wrapper{max-width:100%!important;margin:0!important;padding:10px!important}.flex-col,div[style*="min-width:250px"],div[style*="min-width: 250px"]{width:100%!important;min-width:100%!important;flex:0 1 auto!important;height:auto!important}.flex-row,div[style*="gap:12px"]{flex-direction:column!important;height:auto!important}.stat-box{height:auto!important;margin-bottom:8px}}
+
+  /* ==========================================================================
+     INTEGRATED TACTICAL INTRO & CONTROL INTERFACE STYLES
+     ========================================================================== */
+  body.intro-active {
+    overflow: hidden;
+  }
+
+  /* 1. Intro Overlay System */
+  #intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.8s ease-in-out;
+    overflow: hidden;
+  }
+
+  #enter-btn {
+    background-color: #000;
+    color: #ff3300;
+    border: 2px solid #ff3300;
+    padding: 18px 50px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 26px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    animation: crimsonPulse 2.2s infinite ease-in-out;
+    text-transform: uppercase;
+    z-index: 5;
+    margin-bottom: 25px;
+  }
+
+  @keyframes crimsonPulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 51, 0, 0.6);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 0 20px rgba(255, 153, 0, 0);
+      transform: scale(1.04);
+      background-color: #ff3300;
+      color: #000;
+      border-color: #ff9900;
+    }
+    100% {
+      box-shadow: 0 0 0 0px rgba(255, 51, 0, 0);
+      transform: scale(1);
+    }
+  }
+
+  #enter-btn:hover {
+    background-color: #ff9900;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 30px rgba(255, 153, 0, 0.9);
+  }
+
+  /* Disclaimer Panel */
+  .intro-disclaimer {
+    color: #802015;
+    font-size: 11px;
+    max-width: 480px;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(18, 5, 2, 0.6);
+    border: 1px solid rgba(255, 51, 0, 0.15);
+    padding: 10px 15px;
+    border-radius: 4px;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .intro-disclaimer span {
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  #intro-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    background: #000;
+  }
+
+  #techy-text {
+    display: none;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 36px;
+    color: #ff3300;
+    text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 6;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #techy-text::after {
+    content: '_';
+    animation: termCursor 0.6s infinite steps(2, start);
+  }
+
+  @keyframes termCursor {
+    to { visibility: hidden; }
+  }
+
+  .profile-wrapper {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .profile-wrapper.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* 2. Toggleable Overlay Controls */
+  body.no-scanlines .profile-wrapper::after {
+    background: none !important;
+  }
+
+  body.no-glow, body.no-glow * {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    animation-play-state: paused !important;
+  }
+
+  /* 3. Collapsible Sidebar UI */
+  #tactical-sidebar {
+    position: fixed;
+    top: 20px;
+    right: -320px;
+    width: 320px;
+    height: calc(100vh - 40px);
+    background: rgba(10, 3, 2, 0.94);
+    border: 2px solid var(--primary-dark);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    z-index: 99999;
+    box-sizing: border-box;
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-family: 'Consolas', 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.8);
+    backdrop-filter: blur(12px);
+  }
+
+  #tactical-sidebar.expanded {
+    right: 0;
+    border-color: var(--primary);
+  }
+
+  /* Tab Handle to slide out */
+  #sidebar-handle {
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100px;
+    background: rgba(10, 3, 2, 0.94);
+    border: 2px solid var(--primary-dark);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 14px;
+    writing-mode: vertical-lr;
+    transform: translateY(-50%) rotate(180deg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    transition: all 0.3s;
+  }
+
+  #tactical-sidebar.expanded #sidebar-handle {
+    border-color: var(--primary);
+    color: #fff;
+    background: var(--primary-dark);
+  }
+
+  .sidebar-header {
+    border-bottom: 2px solid rgba(255, 51, 0, 0.3);
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    font-size: 11px;
+  }
+
+  /* Scrollbar customized for sidebar */
+  .sidebar-content::-webkit-scrollbar {
+    width: 4px;
+  }
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background: var(--primary);
+  }
+
+  .sidebar-section {
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 51, 0, 0.15);
+    border-radius: 4px;
+    padding: 12px;
+  }
+
+  .sidebar-section-title {
+    color: var(--accent);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 153, 0, 0.3);
+    padding-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .control-group:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Toggle Switches */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #220a05;
+    transition: .3s;
+    border-radius: 10px;
+    border: 1px solid var(--primary-dark);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--text-muted);
+    transition: .3s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: var(--primary-dark);
+    border-color: var(--primary);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
+    background-color: var(--accent);
+  }
+
+  /* Range inputs */
+  .range-slider {
+    width: 100%;
+    background: #220a05;
+    outline: none;
+    height: 4px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    border: 1px solid var(--primary-dark);
+  }
+
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+
+  .slider-value {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  /* Audio Track Listing styling */
+  .track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .track-item {
+    padding: 6px 8px;
+    border-bottom: 1px dashed rgba(255, 51, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .track-item:hover {
+    background: rgba(255, 51, 0, 0.1);
+    color: #fff;
+  }
+
+  .track-item.active {
+    background: rgba(255, 51, 0, 0.2);
+    border-left: 2px solid var(--accent);
+    color: var(--accent);
+  }
+
+  .track-pct {
+    color: var(--text-muted);
+    font-size: 9px;
+  }
+
+  .now-playing-box {
+    background: #000;
+    border: 1px solid var(--primary-dark);
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 1.4;
+    word-break: break-all;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--green);
+  }
+
+  .audio-button {
+    background: #220a05;
+    color: var(--text);
+    border: 1px solid var(--primary-dark);
+    font-family: inherit;
+    padding: 5px 10px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+    width: 48%;
+  }
+
+  .audio-button:hover {
+    border-color: var(--accent);
+    background: var(--primary-dark);
+    color: #fff;
+  }
+
+  /* Hidden Anchor player for direct YouTube streaming API */
+  #yt-player {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* 4. YOU ARE AN IDIOT Event Styles */
+  body.idiot-mode-active {
+    background-color: #fff !important;
+    animation: idiotStrobeBPM 0.329s infinite steps(2, start) !important; /* 182 BPM strobe rate */
+  }
+
+  @keyframes idiotStrobeBPM {
+    0%, 100% {
+      background-color: #000 !important;
+    }
+    48% {
+      background-color: #fff !important;
+    }
+    96% {
+      background-color: #ff003c !important; /* Low rate random crimson warning frames */
+    }
+  }
+
+  body.idiot-mode-active .profile-wrapper {
+    animation: idiotPulseWrapper 0.329s infinite ease-in-out !important;
+    border-color: #fff !important;
+  }
+
+  @keyframes idiotPulseWrapper {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.03) rotate(0.5deg); }
+  }
+
+  body.idiot-mode-active .tactical-panel,
+  body.idiot-mode-active .stat-box {
+    animation: bounceBPM 0.329s infinite cubic-bezier(0.25, 0.8, 0.25, 1.4) alternate !important;
+  }
+
+  @keyframes bounceBPM {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+  }
+
+  /* Floating entities for special easter egg */
+  .idiot-floating-banner {
+    position: fixed;
+    font-family: 'Consolas', monospace;
+    font-weight: 900;
+    font-size: 28px;
+    color: #ff003c;
+    background: #000;
+    border: 3px solid #fff;
+    padding: 10px 20px;
+    z-index: 100001;
+    pointer-events: none;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px #ff003c;
+    text-transform: uppercase;
+    animation: bannerGlitch 0.15s infinite alternate;
+  }
+
+  @keyframes bannerGlitch {
+    0% { transform: translate(1px, -1px) skewX(-4deg); filter: invert(0); }
+    100% { transform: translate(-1px, 2px) skewX(4deg); filter: invert(1); }
+  }
+
+  /* Responsive styling adjust for sidebar visibility */
+  @media only screen and (max-width: 768px) {
+    #tactical-sidebar {
+      top: auto;
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 380px;
+      border-radius: 12px 12px 0 0;
+      border: 2px solid var(--primary-dark);
+      border-bottom: none;
+      transition: bottom 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    #tactical-sidebar.expanded {
+      right: 0;
+      bottom: 0;
+    }
+    #sidebar-handle {
+      left: 50%;
+      top: -42px;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 40px;
+      writing-mode: horizontal-tb;
+      border: 2px solid var(--primary-dark);
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+</style></head><body class="intro-active">
+
+  <!-- INTRO SCREEN OVERLAY -->
+  <section id="intro-overlay">
+    <button id="enter-btn">E N T E R</button>
+    <div class="intro-disclaimer">
+      <span>Warning:</span> High-fidelity graphical environment. Real-time visual processes and dynamic shading filters are active. Medium to high-end hardware recommended.
+    </div>
+    <video id="intro-video" src="assets/Sols RNG Custom Intro.mp4" playsinline preload="auto"></video>
+    <div id="techy-text">Fully Loaded!</div>
+  </section>
+
+  <!-- COLLAPSIBLE SIDEBAR INTERFACE -->
+  <aside id="tactical-sidebar">
+    <div id="sidebar-handle">SYSTEM</div>
+    
+    <div class="sidebar-header">Tactical Console v2.5</div>
+    
+    <div class="sidebar-content">
+      
+      <!-- Video / Now Playing Info -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Now Streaming</div>
+        <div class="now-playing-box" id="now-playing">Initialising client configuration...</div>
+      </div>
+      
+      <!-- Setting toggles -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Hardware Render Controls</div>
+        
+        <div class="control-group">
+          <span>CRT Scanlines</span>
+          <label class="switch">
+            <input type="checkbox" id="toggle-scanlines" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        
+        <div class="control-group">
+          <span>Glow &amp; Shadows</span>
+          <label class="switch">
+            <input type="checkbox" id="toggle-glow" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Playback Controls -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Audio Control Hub</div>
+        
+        <div class="control-group" style="margin-bottom: 12px;">
+          <button class="audio-button" id="audio-play">PLAY</button>
+          <button class="audio-button" id="audio-pause">PAUSE</button>
+        </div>
+
+        <div class="control-group">
+          <span>Output Gain</span>
+          <div style="width: 60%;">
+            <input type="range" class="range-slider" id="audio-volume" min="0" max="100" value="15">
+            <div class="slider-value" id="volume-val">15%</div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span>Fade-In Time</span>
+          <div style="width: 60%;">
+            <input type="range" class="range-slider" id="fade-start" min="0" max="10" value="3">
+            <div class="slider-value" id="fade-start-val">3s</div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span>Fade-Out Time</span>
+          <div style="width: 60%;">
+            <input type="range" class="range-slider" id="fade-end" min="0" max="10" value="3">
+            <div class="slider-value" id="fade-end-val">3s</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playlists -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Manual Uplink Streams</div>
+        <ul class="track-list" id="playlist-element">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- YouTube Direct Engine Mount -->
+  <div id="yt-player"></div>
+
+  <!-- MAIN CONTAINER CARD -->
+  <div class="profile-wrapper">
+    <div style="background:rgba(0,0,0,0.85);border:1px solid var(--primary);border-radius:6px;padding:15px;text-align:center;margin-bottom:15px;box-sizing:border-box;">
+      <div class="top-gif-wrapper">
+        <!-- Replaced top gif asset -->
+        <img src="assets/blinkiesCafe-TheSkyIsNice.gif" style="display:block;border-radius:5px;max-width:100%;box-sizing:border-box;">
+      </div>
+      <div style="font-size:18px;font-weight:bold;color:#ffffff;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;line-height:1.3;word-wrap:break-word;text-shadow:0 0 8px var(--primary);" class="glitch-hover">"The Sky Surely Looks Nice Today, Ain't It?"</div>
+      <div style="font-size:12px;font-style:italic;color:#ffdac2;letter-spacing:1px;font-weight:bold;" class="glitch-hover">Welcome! We are the Crimson (Chaotic &amp; EQUINOX) Nation, a force to be reckoned with.</div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div class="flex-row">
+      <div class="flex-col">
+        <div class="tactical-panel" style="margin-bottom:0;"><div class="panel-title"><span>❖</span> Rare Badges &amp; Recognition</div>
+          <ul class="tactical-list">
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Drake Killer</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> 300</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Spook Distributor</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Halloween 2024 Artistic Participant</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Eggcellent</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Mar '25 Tourney</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Conch Republic</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Octopus</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Blackbeard</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Back In My Day</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Destroyed 100k Total Infra! <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Sep/21/2025)</span></li>
+            <li><span class="tactical-badge" style="color:var(--red)">[!]</span> Banned From Chimera's Financial &amp; Banking Discord Server!</li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Pumpkin Participant 2025 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Dec/27/2025 05:22 AM. 41st row)</span></li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> PNW Santa 25 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Dec/29/2025 09:05 AM. 14th row) [Thanks Khadgar ^-^]</span></li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Perfect 4,000.0 Nation Score <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Somewhere Between Day 494)</span></li>
+            <li><span class="tactical-badge" style="color:var(--accent)">◇</span> Reached 500 Days Since Nation Creation!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="tactical-panel" style="margin-bottom:0;"><div class="panel-title"><span>❖</span> Proud Achievements Log</div>
+          <ul class="tactical-list">
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Anti-Proliferation</li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Golden Treasures 2025</li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Nuclear Capable <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Jul/02/2025 07:09 AM)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Coolest Day: 256 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Nothing happened, lul)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Jul/22/2025, 6:07 AM, MANGO DAY.</li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Coolest Day: 420 <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(sum regular stuff happened, :p)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> 10K Page Visits. <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Nov/06/2025)</span></li>
+            <li><span class="tactical-badge" style="color:var(--green)">◆</span> Achieved Airstrike Immense Triumph at Around 1% or Below Chance Blindly Against Corinth. <span style="color:var(--text-muted);font-size:10px;">(Mar/29/2026 09:18 AM)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Golden Treasures 2026</li>
+            <li><span class="tactical-badge" style="color:var(--green)">◆</span> Achieved Ground Attack Immense Triumph at Around 0.5% or Below Chance Blindly Again Against Queendom of Azuria. <span style="color:var(--text-muted);font-size:10px;">(Apr/27/2026 12:44 AM)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆ Achieved Ground Attack Immense Triumph at LITERALLY 0% Chance Against East Anglia.</span> I Had a 93.5% of Utter Failure, 6.5% Pyrrhic Victory, 0% Moderate Success and 0% Immense Triumph. I be rolling like I have a 6 clover leaf In my nation. <span style="color:var(--text-muted);font-size:10px;">(May/12/2026 10:33 AM)</span></li>
+            <li><span class="tactical-badge" style="color:var(--green)">◆ Achieved '3 In a Row' Ground Attack's Immense Triumph's</span> at 1.4%, 1.8%, 2.8% Chance's Against East Anglia Again.. what? <span style="color:var(--text-muted);font-size:10px;">(May/13/2026 02:38 AM)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Lauded <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(May/29/2026 12:39 AM) (Commended By 50 Nations)</span></li>
+            <li><span class="tactical-badge" style="color:var(--yellow)">◆</span> Founder <span style="color:var(--text-muted);font-size:10px;font-style:italic;">(Jun/11/2026 02:11 PM) [Unlocked Achievement: 'Founder' (Create an Alliance)]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div class="tactical-panel">
+      <div class="panel-title"><span>❖</span> Combat Deployment History</div>
+      <div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift">
+        <div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">01</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Operation Scorched Rose <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[Finished Major War]</span></span></div>
+        <div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> DFL / CLG Only + Allies × Cam × Sam vs. Rose + TFP.<br><strong style="color:#ffffff;">Note:</strong> Did It Mostly With Missiles :P</div>
+        <div class="flex-row">
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box green">
+              <div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div>
+              <div class="stat-value green">2.63 Billion</div>
+              <div style="font-size:10px;color:rgba(0,255,157,0.8);font-style:italic;margin-top:2px;position:relative;z-index:2;">#1 Damager in DFL</div>
+            </div>
+          </div>
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box red">
+              <div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div>
+              <div class="stat-value red">1.27 Billion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift">
+        <div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">02</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Fire Is In The Air Tonight <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[In The Air Tonight - Finished Micro War]</span></span></div>
+        <div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only + Allies × CyberTr0n × TCO vs. LobotomyCorp + The Willing.<br><strong style="color:#ffffff;">Note:</strong> "The Fire Didn't Kill The Lily; It Just Cleared The Path For It To Bloom"</div>
+        <div class="flex-row">
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box green">
+              <div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div>
+              <div class="stat-value green">~1.88 Billion</div>
+              <div style="font-size:10px;color:rgba(0,255,157,0.8);font-style:italic;margin-top:2px;position:relative;z-index:2;">2nd in T.R.F vs Willing | #4 Aero Bloc</div>
+            </div>
+          </div>
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box red">
+              <div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div>
+              <div class="stat-value red">300.1 Million</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;margin-bottom:12px;box-sizing:border-box;" class="hover-lift">
+        <div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">03</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Sugar Burn <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[Operation Candy Crush - Finished Micro War]</span></span></div>
+        <div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only + Allies vs. Candy Kingdom.<br><strong style="color:#ffffff;">Note:</strong> Physics is simple. Fire melts candy. See you on the battlefield.</div>
+        <div class="flex-row">
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box green">
+              <div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div>
+              <div class="stat-value green">136.2 Million</div>
+            </div>
+          </div>
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box red">
+              <div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div>
+              <div class="stat-value red">175.2 Million</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);border-radius:4px;padding:12px;box-sizing:border-box;" class="hover-lift">
+        <div style="border-bottom:1px dashed var(--primary-dark);padding-bottom:6px;margin-bottom:8px;"><span style="font-size:16px;font-weight:bold;color:var(--primary);margin-right:8px;font-family:monospace;">04</span><span style="font-size:14px;font-weight:bold;color:#ffffff;">Op Epic Fury - Global War 36 <span style="font-size:10px;color:var(--text-muted);font-weight:normal;">[GW War - Excluded from Grand Total]</span></span></div>
+        <div style="font-size:12px;line-height:1.5;color:var(--text);margin-bottom:10px;"><strong style="color:#ffffff;">Alliances:</strong> T.R.F / CLG Only vs. EvH + ASC + SV (Shadow Valley).<br><strong style="color:#ffffff;">Note:</strong> "War is a fire that doesn't stop until it runs out of things to burn, including us. and this doesn't count towards grand total btw."</div>
+        <div class="flex-row">
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box green">
+              <div class="stat-label"><span style="color:var(--green)">▲</span> Warcost Dealt:</div>
+              <div class="stat-value green">292.6 Million</div>
+            </div>
+          </div>
+          <div class="flex-col" style="flex:1 1 120px;">
+            <div class="stat-box red">
+              <div class="stat-label"><span style="color:var(--red)">▼</span> Warcost Lost:</div>
+              <div class="stat-value red">533.6 Million</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hover-pop" style="background:rgba(5,20,10,0.85);border:1px solid #00ff66;border-left:4px solid #00ff66;border-radius:4px;padding:15px;margin-bottom:15px;box-sizing:border-box;box-shadow:0 0 20px rgba(0,255,102,0.15);">
+      <div style="font-size:14px;font-weight:bold;color:#00ff66;text-transform:uppercase;border-bottom:1px solid #00ff66;padding-bottom:6px;margin-bottom:12px;"><span style="color:#00ff66;margin-right:6px;">►</span> THE GRAND TOTAL OF FINISHED CAMPAIGNS</div>
+      <div class="flex-row" style="margin-bottom:12px;width:100%;box-sizing:border-box;">
+        <div class="flex-col" style="flex:1 1 120px;">
+          <div class="stat-box green"><div class="stat-label">Total Dealt</div><div class="stat-value green">4.51 BILLION</div></div>
+        </div>
+        <div class="flex-col" style="flex:1 1 120px;">
+          <div class="stat-box red"><div class="stat-label">Total Lost</div><div class="stat-value red">1.57 BILLION</div></div>
+        </div>
+        <div class="flex-col" style="flex:1 1 120px;">
+          <div class="stat-box green"><div class="stat-label">Net Damage</div><div class="stat-value green">+2.94 BILLION</div></div>
+        </div>
+      </div>
+      <div style="background:rgba(0,255,102,0.1);border:1px dashed #00ff66;padding:15px;border-radius:4px;text-align:center;box-sizing:border-box;box-shadow:inset 0 0 15px rgba(0,255,102,0.1);">
+        <div style="font-size:12px;color:#ffffff;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Overall Efficiency Ratio</div>
+        <div style="font-size:26px;font-weight:bold;color:#00ff66;text-shadow:0 0 15px #00ff66;animation:pulseBlink 2s infinite">2.87</div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div class="flex-row">
+      <div class="flex-col">
+        <div class="tactical-panel">
+          <div class="panel-title"><span>❖</span> Alliance History Registry</div>
+          <div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Valyrian Order</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">First AA | Joined Day 16-17? – Dec/2024</div></div>
+          <div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Dawnfire Legion</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Jan/2025 – Jul/2025 | 3-4th Merge Event from VYO</div></div>
+          <div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">Camelot</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Jul/18/2025 – Aug/20/2025 | DFL Merged with CL</div></div>
+          <div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--primary);"><div style="font-weight:bold;color:#ffffff;font-size:13px;">The Reclaimed Flame</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Aug/20/2025 – Jun/11/2026 | Micro AA</div></div>
+          <div class="history-line" style="margin-bottom:12px;padding-left:12px;border-left:2px solid var(--accent);"><div style="font-weight:bold;color:#ffffff;font-size:13px;text-shadow:0 0 5px var(--accent);">Blue Archive Kivotos Academies</div><div style="font-size:11px;color:var(--accent);margin-top:4px;font-weight:bold;">Jun/11/2026 – Current | [TesterLan Created This Alliance First!]</div></div>
+          <div style="padding-left:12px;border-left:2px dashed var(--text-muted);"><div style="font-weight:bold;color:var(--text-muted);font-size:13px;">Pending...</div><div style="font-size:11px;color:#ab958e;margin-top:4px;">??? – ???</div></div>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="tactical-panel">
+          <div class="panel-title"><span>❖</span> System Status Registry &amp; Misc</div>
+          <ul class="tactical-list">
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Alliance Loyalty:</strong> <span style="color:#f5ecea;">Loyal Till The End (Soul of the Varangian Guard)</span></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Current Lore:</strong> <span style="color:var(--accent);font-weight:bold;text-shadow:0 0 5px var(--accent);">"Grail of The High Tech Era" Mass Economic Recovery (C25)</span></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Economic Status:</strong> <span style="color:var(--yellow);">Enhancing Economic Prowess</span></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Economic Policy:</strong> <span style="color:#f5ecea;">Moderate Right</span></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">Custom Anthem:</strong> <a href="https://youtu.be/O2ILOw06g40" class="tactical-link" target="_blank">Trap Queen Anthem (1738)</a></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Defense Music:</strong> <a href="https://youtu.be/FL9ocieCNjM" class="tactical-link" target="_blank">Before Every Hit</a></li>
+            <li style="padding:6px 0;border-bottom:1px dashed rgba(255,51,0,0.3);font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Situational Music:</strong> <a href="https://music.youtube.com/watch?v=YedGOBFTShc&si=lh1R2ogRABuMVKDW" class="tactical-link" target="_blank">My Deteriorating Braincells</a></li>
+            <li style="padding:6px 0;font-size:12px;line-height:1.4;"><strong style="color:#ffffff;">National Flags Directory:</strong> <a href="https://crimsonlandguardian.straw.page" class="tactical-link" style="color:var(--green);font-weight:bold;text-shadow:0 0 5px var(--green);" target="_blank">Crimson Hall of Flags</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tactical-panel">
+      <div class="panel-title"><span>❖</span> NATION ERA'S REGISTRY</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;width:100%;box-sizing:border-box;">
+        <div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">1. Depression Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Rapidly built 5-6 cities, lost 3-4M daily revenue. Evolved to Absolute Monarchy for cultural revolution, city building &amp; economy. (C16-19)</div></div>
+        <div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--accent);font-size:12px;margin-bottom:4px;text-transform:uppercase;">2. Absolute Monarchy</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Stabilization period. (C20)</div></div>
+        <div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">3. Stratocracy X AM</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Remilitarization phase. (C22)</div></div>
+        <div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">4. Remastered Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">National Recovery. (C23)</div></div>
+        <div class="hover-lift" style="flex:1 1 160px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,51,0,0.3);padding:10px;border-radius:4px;box-sizing:border-box;"><div style="font-weight:bold;color:var(--primary);font-size:12px;margin-bottom:4px;text-transform:uppercase;">5. Destroyer Era</div><div style="font-size:11px;color:var(--text);line-height:1.4;">Nation Wide War. (C24)</div></div>
+        <div class="hover-pop" style="flex:1 1 160px;background:rgba(25,5,0,0.9);border:1px solid var(--accent);padding:10px;border-radius:4px;box-sizing:border-box;box-shadow:0 0 15px rgba(255,153,0,0.3);"><div style="font-weight:bold;color:#ffffff;font-size:13px;margin-bottom:4px;text-transform:uppercase;text-shadow:0 0 5px var(--accent);">6. Grail of The High Tech Era [Active]</div><div style="font-size:11px;color:#ffffff;line-height:1.4;font-style:italic;">Mass Economic Recovery. (C25)</div></div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div class="tactical-panel">
+      <div class="panel-title"><span>❖</span> CLG'Z TOTALLY NECESSARY POLICIES</div>
+      <div class="flex-row" style="align-items:flex-start;">
+        <div class="flex-col">
+          <div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;height:100%;">
+            <div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🏴 RAID POLICY</div>
+            <ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;">
+              <li style="margin-bottom:6px;">Targets nations inactive for over one—two weeks.</li>
+              <li style="margin-bottom:6px;">Raids alliance members and applicants for resources, particularly those who don't actively defend or counter.</li>
+              <li style="margin-bottom:6px;">We will not attack counters unless they initiate further aggression or are identified as a continued threat like espionage. <span style="color:var(--yellow);">(Retaliation Includes Nuking And Missiles, Maximum of 2-3 Attacks And Ill Start Fighting Back)</span></li>
+              <li style="margin-bottom:6px;">Peace terms are negotiable, but expect to pay your dues. <span style="color:var(--red);font-style:italic;">(If you just leave me on no message then you suck)</span></li>
+              <li style="color:var(--yellow);font-weight:bold;list-style-type:none;margin-top:10px;text-shadow:0 0 5px var(--yellow);">↓ EXCEPTION: If I'm Under 900 Infra or The Target Is Stacked With Loot — Then I'm Hitting Back However I Want.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-col" style="display:flex;flex-direction:column;gap:12px;">
+          <div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;">
+            <div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🛡️ DEFENSE POLICY</div>
+            <ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;">
+              <li style="margin-bottom:6px;">Any attack on our nation will be met with immediate and comprehensive retaliation.</li>
+              <li style="margin-bottom:6px;">This applies to all aggressors, counter-guys not included, Unless They Keep Attacking and or ILLEGAL. <span style="color:var(--yellow);">(If you, for whatever reason keep stalling without attacking me and I reach max 12 MAPS, I am going to do my retaliation regardless.)</span></li>
+              <li style="margin-bottom:6px;">We do not tolerate unprovoked attacks.</li>
+              <li style="color:var(--red);font-weight:bold;list-style-type:none;margin-top:8px;text-shadow:0 0 5px var(--red);">↓ Summary for dummies: Attacking us is a financial decision. Make sure you can afford it.</li>
+            </ul>
+          </div>
+          <div class="policy-box" style="background:rgba(0,0,0,0.85);border:1px solid rgba(255,51,0,0.3);padding:12px;border-radius:4px;box-sizing:border-box;">
+            <div style="font-weight:bold;color:#ffffff;border-bottom:1px solid var(--primary-dark);padding-bottom:6px;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px var(--primary);">🤝 COMMENDATIONS &amp; DENOUNCEMENTS</div>
+            <ul style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;">
+              <li style="margin-bottom:6px;">Commend me = I Commend u. Denounce me = I Denounce you. I will Commend You, If ur Nation Looks Cool Plus Impressive—(or if you Commended me).</li>
+              <li style="margin-bottom:0;">I might occasionally go ahead on a commendation spree to find nations with a good aesthetic. 👀</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div style="background:rgba(25,10,2,0.85);border:1px solid #802b00;border-left:4px solid #ff9900;border-radius:4px;padding:15px;margin-bottom:15px;box-sizing:border-box;">
+      <div style="background:linear-gradient(135deg,rgba(40,15,5,0.9),rgba(15,5,0,0.9));border:1px solid #ff9900;border-radius:6px;padding:15px;text-align:center;margin-bottom:15px;box-sizing:border-box;box-shadow:0 0 25px rgba(255,153,0,0.3);">
+        <div style="font-size:18px;font-weight:bold;color:#ff9900;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;" class="glitch-hover">🎨 SPECIAL NATION FLAG COMMISSION! 🎨</div>
+        <div style="display:inline-block;padding:6px 14px;border-radius:4px;font-weight:bold;font-size:12px;text-transform:uppercase;background:rgba(0,255,102,0.15);color:#00ff66;border:1px solid #00ff66;box-shadow:0 0 15px rgba(0,255,102,0.4);margin-bottom:10px;animation:pulseBlink 3s infinite">STATUS: OPEN | Weekly Slots: {0}/3</div>
+        <div style="font-size:11px;color:#ffcc00;font-style:italic;">&lt; (im not updating tis gng) &gt;</div>
+      </div>
+      <div class="hover-lift" style="background:rgba(0,0,0,0.7);border:1px dashed #ff9900;padding:15px;border-radius:4px;margin-bottom:15px;text-align:center;box-sizing:border-box;">
+        <div style="font-size:11px;color:#ab958e;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">The 1-Month Special Menu (Available until April 15, DM In Discord or In-game)</div>
+        <div style="font-size:16px;font-weight:bold;color:#ffffff;margin-bottom:6px;">The Casual/Complex Static Flag</div>
+        <div style="font-size:24px;font-weight:bold;color:#00ff66;margin-bottom:8px;text-shadow:0 0 10px #00ff66;">$10,700,000 ($10.7M)</div>
+        <div style="font-size:11px;color:#ab958e;font-style:italic;">[A complex or casual non-animated nation flag with your personal aesthetic.]</div>
+      </div>
+      <div class="flex-row" style="margin-bottom:15px;">
+        <div class="flex-col" style="flex:1 1 250px;background:rgba(0,0,0,0.7);border:1px solid #802b00;padding:12px;border-radius:4px;box-sizing:border-box;">
+          <div style="font-weight:bold;color:#ff9900;border-bottom:1px solid #802b00;padding-bottom:6px;margin-bottom:10px;font-size:12px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px #ff9900;">📋 THE WORK PROTOCOL</div>
+          <ol style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;">
+            <li style="margin-bottom:6px;"><strong style="color:#ffffff;">Limited Slots:</strong> I can only take 3 Nation Flag Orders a Week. First come, First served. Slots reset every Monday.</li>
+            <li style="margin-bottom:6px;"><strong style="color:#ffffff;">Payment Flow:</strong> Payment MUST Be received In-game after I show you the finished watermarked preview, If ya want ur unwatermarked finished flag.</li>
+            <li style="margin-bottom:6px;"><strong style="color:#ffffff;">Details Matter:</strong> Please do provide a clear description, colors, and any specific symbols you want included. Strictly no prohibited imagery that violates P&W rules.</li>
+            <li style="margin-bottom:6px;"><strong style="color:#ffffff;">Turnaround Time:</strong> Expect 2-3 Days Per One Flag Depending on Complexity. <span style="color:#00ff66;font-style:italic;text-shadow:0 0 3px #00ff66;">(Faster If Casual 👀)</span></li>
+            <li style="margin-bottom:0;"><strong style="color:#ffffff;">Limit:</strong> 1 Flag per individual per week. If you need a second flag, you'll have to wait until next week.</li>
+          </ol>
+        </div>
+        <div class="flex-col" style="flex:1 1 250px;background:rgba(0,0,0,0.7);border:1px solid #802b00;padding:12px;border-radius:4px;box-sizing:border-box;">
+          <div style="font-weight:bold;color:#ff9900;border-bottom:1px solid #802b00;padding-bottom:6px;margin-bottom:10px;font-size:12px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 4px #ff9900;">⚡ THE RESPECT—THE—HUSTLE RULES</div>
+          <ol style="padding-left:15px;margin:0;font-size:11px;line-height:1.5;color:#f5ecea;">
+            <li style="margin-bottom:8px;"><strong style="color:#ffffff;">The 'Sketch' Approval &amp; Stages:</strong> I send u a basic-ish static version first. Once you say "Yes go on", I start final finishings. Major layout changes after this stage will cost an extra <span style="color:#00ff66;font-weight:bold;text-shadow:0 0 3px #00ff66;">$7,000,000 ONCE.</span></li>
+            <li style="margin-bottom:8px;"><strong style="color:#ffffff;">The 'Seven-Strike' Policy:</strong> You get 7 Free Revisions (minor tweaks). Starting at the 8th Revision, It's <span style="color:#00ff66;font-weight:bold;text-shadow:0 0 3px #00ff66;">$5,000,000</span> per change.</li>
+            <li style="margin-bottom:0;"><strong style="color:#ffffff;">The "No Re-Draw" Clause:</strong> A revision is a tweak, not a whole new flag. If you want a completely different concept halfway through, you have to pay the full price again and wait for a new slot.</li>
+          </ol>
+        </div>
+      </div>
+      <div style="background:rgba(0,0,0,0.85);border:1px solid #ff9900;border-radius:4px;padding:15px;text-align:center;box-sizing:border-box;box-shadow:0 0 20px rgba(255,153,0,0.25);">
+        <div style="font-size:14px;color:#ffffff;margin-bottom:12px;">Refer To <span style="color:#ffcc00;font-style:italic;">Testerz—Alter—Ego's</span> <a href="https://discord.com/users/testerz.alter.ego" class="tactical-link" style="color:#ff3300;text-shadow:0 0 8px #ff3300;font-weight:bold;font-size:16px;" target="_blank">[Discord]</a> &lt; To Order.</div>
+        <div style="border-top:1px dashed #802b00;padding-top:15px;">
+          <div style="font-size:14px;font-weight:bold;color:#ff9900;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;text-shadow:0 0 10px #ff9900;">🏆 Hall of Fame</div>
+          <div style="font-size:10px;color:#ab958e;margin-bottom:10px;text-transform:uppercase;">Individuals Who Ordered a Flag <span style="text-transform:none;">(Optional To Be Here Btw &amp; Lasts until July 11th)</span></div>
+          <div style="font-size:12px;color:#f5ecea;line-height:1.6;"><strong style="color:#ffffff;">1.</strong> Nation: RyLand | Himanshu Barhath<br><strong style="color:#ffffff;">2.</strong> Nation: Khanate of Khadgar | Kalepo Waing</div>
+        </div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div class="flex-row" style="margin-bottom:15px;width:100%;box-sizing:border-box;">
+      <div class="hover-lift" style="flex:1 1 250px;min-width:250px;background:rgba(25,10,2,0.85);border:1px solid #804c00;border-left:4px solid #ffcc00;border-radius:4px;padding:12px;box-sizing:border-box;box-shadow:inset 0 0 20px rgba(255,204,0,0.15);">
+        <div style="font-size:14px;font-weight:bold;color:#ffcc00;text-transform:uppercase;border-bottom:1px solid rgba(255,204,0,0.5);padding-bottom:6px;margin-bottom:10px;text-shadow:0 0 8px #ffcc00;"><span>❖</span> Permanent Hall of Fame 🏆</div>
+        <div style="padding:6px 0;word-wrap:break-word;"><strong style="color:#ffffff;font-size:13px;">Kolvlocksland | Zenko</strong><div style="font-size:11px;color:#ab958e;font-style:italic;margin-top:4px;line-height:1.4;">[Willingly Became my alter ego's Victim In P&amp;W discord server. Apr/09/2026 7:57 PM]</div></div>
+      </div>
+      <div class="hover-lift" style="flex:1 1 250px;min-width:250px;background:rgba(10,5,2,0.85);border:1px solid #4d1a00;border-left:4px solid #ab958e;border-radius:4px;padding:12px;box-sizing:border-box;box-shadow:inset 0 0 15px rgba(100,50,30,0.15);">
+        <div style="font-size:14px;font-weight:bold;color:#ab958e;text-transform:uppercase;border-bottom:1px solid rgba(120,80,60,0.5);padding-bottom:6px;margin-bottom:10px;letter-spacing:1px;"><span>❖</span> Permanent Hall of Bums 🎼</div>
+        <div style="padding:6px 0;word-wrap:break-word;"><strong style="color:#ab958e;font-size:13px;text-decoration:line-through;">Bryantplux Empire | Brypony</strong><div style="font-size:11px;color:#ab958e;font-style:italic;margin-top:4px;line-height:1.4;">[Willingly Became a Bum for replying "poopoo" to alter ego's "yo im evil." In P&amp;W discord server. Apr/09/2026 8:07 PM]</div></div>
+      </div>
+    </div>
+    <div class="tactical-divider"><span>▲  ❖  ◆  ❖  ▼</span></div>
+    <div style="background:rgba(20,5,2,0.85);border:1px solid #800000;border-left:4px solid #ff3300;border-radius:4px;padding:20px;text-align:center;box-sizing:border-box;box-shadow:inset 0 0 30px rgba(255,51,0,0.2);">
+      <div style="font-size:12px;color:#ff3300;font-weight:bold;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;animation:pulseBlink 1.5s infinite">Real-Time Note:</div>
+      <p style="font-style:italic;font-size:15px;color:#ffffff;line-height:1.5;margin:0 0 20px 0;word-wrap:break-word;text-shadow:0 0 8px var(--accent);" class="glitch-hover">"I HAVE SUPER IMPROVED MY DESCRIPTION I HOPE YOUR HAPPY!"</p>
+      <div class="tactical-video-container">
+        <iframe src="https://www.youtube.com/embed/V4elF7---KQ?autoplay=0" style="width:100%;aspect-ratio:16/9;border:none;display:block;" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen="true"></iframe>
+      </div>
+      <div class="bottom-pulse-wrapper">
+        <!-- Replaced bottom gif asset -->
+        <img src="assets/blinkiesCafe-TheCrimsonLandGuard.gif" style="display:block;border-radius:4px;max-width:100%;box-sizing:border-box;">
+      </div>
+    </div>
+  </div>
+
+  <!-- LOAD YOUTUBE IFRAME STREAMING API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- CONTROL SYSTEM CORE ROUTINES -->
+  <script>
+    // 1. Music Database Configuration Map
+    const tracksList = [
+      { id: "cJyPtpldb78", name: "Sutekimeppou", probability: 9.4 },
+      { id: "tzOrOyi8LP8", name: "Kegen", probability: 9.4 },
+      { id: "aw7K8uOqGtA", name: "Decryption", probability: 9.4 },
+      { id: "z3wSvcCnPyQ", name: "Limbus Company Menu", probability: 9.4 },
+      { id: "NkNy9qDWiAw", name: "Sun - Reload / Persona 3 Reload", probability: 9.4 },
+      { id: "6otKikv4kvo", name: "TIAN TIAN", probability: 9.4 },
+      { id: "ZuifkacZ0TA", name: "Hero", probability: 9.4 },
+      { id: "IJN0piNZhBE", name: "The Shovel", probability: 9.4 },
+      { id: "sqK-jh4TDXo", name: "Machine Love~", probability: 9.4 },
+      { id: "evloseZCQcc", name: "New World", probability: 9.4 },
+      { id: "WYER0HZMMnI", name: "YO MAMA! (Joke Track)", probability: 5.0 },
+      { id: "udiDAYzMRmA", name: "YOU ARE AN IDIOT (Easter Egg)", probability: 1.0 }
+    ];
+
+    let ytPlayer = null;
+    let selectedTrackIndex = null;
+    let fadeInterval = null;
+    let currentVolume = 15; // default low target
+    let isTransitioning = false;
+    let actionDebounceTimer = null;
+    let inputCooldown = false;
+    let idiotTimerInterval = null;
+
+    // 2. Initialize YouTube Player API Frame
+    function onYouTubeIframeAPIReady() {
+      ytPlayer = new YT.Player('yt-player', {
+        height: '1',
+        width: '1',
+        videoId: '',
+        playerVars: {
+          autoplay: 0,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          modestbranding: 1,
+          rel: 0,
+          showinfo: 0
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      document.getElementById('now-playing').innerText = "Streaming Deck Ready. Launch Client.";
+    }
+
+    function onPlayerStateChange(event) {
+      // If active track ends, pick another track automatically
+      if (event.data === YT.PlayerState.ENDED) {
+        if (tracksList[selectedTrackIndex].id === "udiDAYzMRmA") {
+          // "You are an idiot" ended, do not loop - swap to random non-idiot track
+          cleanupIdiotMode();
+          playRandomWeightedTrack();
+        } else {
+          // Standard track ended, loop current or auto-select a new one
+          playRandomWeightedTrack();
+        }
+      }
+    }
+
+    // 3. Probabilistic Track Selection Core Logic
+    function getWeightedRandomTrackIndex() {
+      const rand = Math.random() * 100;
+      let cumulative = 0;
+      for (let i = 0; i < tracksList.length; i++) {
+        cumulative += tracksList[i].probability;
+        if (rand <= cumulative) {
+          return i;
+        }
+      }
+      return 0; // Fallback
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const enterBtn = document.getElementById('enter-btn');
+      const introVideo = document.getElementById('intro-video');
+      const techyText = document.getElementById('techy-text');
+      const introOverlay = document.getElementById('intro-overlay');
+      const profileWrapper = document.querySelector('.profile-wrapper');
+      
+      const toggleScanlines = document.getElementById('toggle-scanlines');
+      const toggleGlow = document.getElementById('toggle-glow');
+      const sidebar = document.getElementById('tactical-sidebar');
+      const handle = document.getElementById('sidebar-handle');
+      
+      const playBtn = document.getElementById('audio-play');
+      const pauseBtn = document.getElementById('audio-pause');
+      const volSlider = document.getElementById('audio-volume');
+      const volVal = document.getElementById('volume-val');
+      
+      const fadeStartSlider = document.getElementById('fade-start');
+      const fadeStartVal = document.getElementById('fade-start-val');
+      const fadeEndSlider = document.getElementById('fade-end');
+      const fadeEndVal = document.getElementById('fade-end-val');
+      const playlistContainer = document.getElementById('playlist-element');
+
+      // Setup Volume display
+      currentVolume = parseInt(volSlider.value);
+
+      // Render manual playlist selectors inside sidebar console
+      tracksList.forEach((track, idx) => {
+        const li = document.createElement('li');
+        li.className = 'track-item';
+        li.dataset.index = idx;
+        
+        let labelName = track.name;
+        if (track.id === "udiDAYzMRmA") {
+          li.id = "idiot-easter-egg"; // Secret targeting ID for Easter Egg styling
+        }
+
+        li.innerHTML = `<span>${idx + 1}. ${labelName}</span><span class="track-pct">${track.probability}%</span>`;
+        playlistContainer.appendChild(li);
+
+        li.addEventListener('click', () => {
+          if (inputCooldown) return;
+          triggerCooldown();
+          executeTrackTransition(idx);
+        });
+      });
+
+      // Prevent spam triggers
+      function triggerCooldown() {
+        inputCooldown = true;
+        setTimeout(() => { inputCooldown = false; }, 2000); // 2 second block
+      }
+
+      // Handle Intro Screen Interactivity
+      enterBtn.addEventListener('click', () => {
+        enterBtn.style.display = 'none';
+        document.querySelector('.intro-disclaimer').style.display = 'none';
+        
+        introVideo.style.display = 'block';
+        introVideo.play().catch(err => {
+          console.warn("Local video playback failed. Skipping directly:", err);
+          handleVideoEnd();
+        });
+      });
+
+      introVideo.addEventListener('ended', handleVideoEnd);
+
+      function handleVideoEnd() {
+        introVideo.style.display = 'none';
+        techyText.style.display = 'block';
+        
+        // Speedy splash transition
+        techyText.offsetHeight;
+        techyText.style.opacity = '1';
+
+        setTimeout(() => {
+          introOverlay.style.opacity = '0';
+          document.body.classList.remove('intro-active');
+          profileWrapper.classList.add('visible');
+
+          // Initialize background audio routines on user click event transition context
+          playRandomWeightedTrack();
+
+          setTimeout(() => {
+            introOverlay.remove();
+          }, 800);
+        }, 1100); // Speed optimized transition display time
+      }
+
+      // Sidebar collapse controls
+      handle.addEventListener('click', () => {
+        sidebar.classList.toggle('expanded');
+      });
+
+      // Scanline & glow overrides mapping
+      toggleScanlines.addEventListener('change', (e) => {
+        if (!e.target.checked) {
+          document.body.classList.add('no-scanlines');
+        } else {
+          document.body.classList.remove('no-scanlines');
+        }
+      });
+
+      toggleGlow.addEventListener('change', (e) => {
+        if (!e.target.checked) {
+          document.body.classList.add('no-glow');
+        } else {
+          document.body.classList.remove('no-glow');
+        }
+      });
+
+      // Audio manual parameters mapping
+      volSlider.addEventListener('input', (e) => {
+        currentVolume = parseInt(e.target.value);
+        volVal.innerText = currentVolume + "%";
+        if (ytPlayer && !isTransitioning) {
+          ytPlayer.setVolume(currentVolume);
+        }
+      });
+
+      fadeStartSlider.addEventListener('input', (e) => {
+        fadeStartVal.innerText = e.target.value + "s";
+      });
+      fadeEndSlider.addEventListener('input', (e) => {
+        fadeEndVal.innerText = e.target.value + "s";
+      });
+
+      playBtn.addEventListener('click', () => {
+        if (ytPlayer && ytPlayer.playVideo) {
+          ytPlayer.playVideo();
+        }
+      });
+
+      pauseBtn.addEventListener('click', () => {
+        if (ytPlayer && ytPlayer.pauseVideo) {
+          ytPlayer.pauseVideo();
+        }
+      });
+    });
+
+    // 4. Custom Interpolated Audio Playback Engine
+    function playRandomWeightedTrack() {
+      const idx = getWeightedRandomTrackIndex();
+      executeTrackTransition(idx);
+    }
+
+    function executeTrackTransition(trackIndex) {
+      if (!ytPlayer || !ytPlayer.loadVideoById) {
+        // Fallback retry block if player context is initializing asynchronously
+        setTimeout(() => { executeTrackTransition(trackIndex); }, 200);
+        return;
+      }
+
+      if (isTransitioning) return;
+      isTransitioning = true;
+
+      // Update manual playlist highlight classes
+      const items = document.querySelectorAll('.track-item');
+      items.forEach(el => el.classList.remove('active'));
+      const activeElement = document.querySelector(`.track-item[data-index="${trackIndex}"]`);
+      if (activeElement) {
+        activeElement.classList.add('active');
+      }
+
+      // Dynamic 50% chance background art rendering
+      const profile = document.querySelector('.profile-wrapper');
+      if (Math.random() < 0.5) {
+        profile.style.backgroundImage = "linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)), url('assets/NIJIKAYellow.jpg')";
+      } else {
+        profile.style.backgroundImage = "linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)), url('assets/IKuyoCrimson.jpg')";
+      }
+
+      const nextTrack = tracksList[trackIndex];
+      selectedTrackIndex = trackIndex;
+
+      // Get user fade parameters
+      const fadeOutSec = parseFloat(document.getElementById('fade-end').value);
+      const fadeInSec = parseFloat(document.getElementById('fade-start').value);
+
+      clearInterval(fadeInterval);
+
+      // Perform fade down sequence if current media is playing active
+      let currentVol = ytPlayer.getVolume();
+      const fadeOutSteps = 20;
+      const fadeOutIntervalTime = (fadeOutSec * 1000) / fadeOutSteps;
+      let stepCount = 0;
+
+      if (currentVol > 0 && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+        fadeInterval = setInterval(() => {
+          stepCount++;
+          let tempVol = currentVol - (currentVol * (stepCount / fadeOutSteps));
+          ytPlayer.setVolume(Math.max(0, tempVol));
+
+          if (stepCount >= fadeOutSteps) {
+            clearInterval(fadeInterval);
+            loadAndFadeInNextTrack(nextTrack, fadeInSec);
+          }
+        }, fadeOutIntervalTime);
+      } else {
+        loadAndFadeInNextTrack(nextTrack, fadeInSec);
+      }
+    }
+
+    function loadAndFadeInNextTrack(track, fadeInSec) {
+      // Set Now Playing text safely
+      document.getElementById('now-playing').innerText = track.name + " (Loading...)";
+      
+      // Check for Easter Egg Trigger Sequence
+      if (track.id === "udiDAYzMRmA") {
+        initiateIdiotMode();
+      } else {
+        cleanupIdiotMode();
+      }
+
+      ytPlayer.loadVideoById(track.id, 0);
+      ytPlayer.setVolume(0);
+      ytPlayer.playVideo();
+
+      const fadeInSteps = 20;
+      const fadeInIntervalTime = (fadeInSec * 1000) / fadeInSteps;
+      let stepCount = 0;
+
+      clearInterval(fadeInterval);
+      fadeInterval = setInterval(() => {
+        stepCount++;
+        let targetVol = (currentVolume * (stepCount / fadeInSteps));
+        ytPlayer.setVolume(Math.min(currentVolume, targetVol));
+
+        if (stepCount >= fadeInSteps) {
+          clearInterval(fadeInterval);
+          ytPlayer.setVolume(currentVolume);
+          document.getElementById('now-playing').innerText = track.name + " [ONLINE]";
+          isTransitioning = false;
+        }
+      }, fadeInIntervalTime);
+    }
+
+    // 5. Special Easter Egg Control Functions
+    function initiateIdiotMode() {
+      document.body.classList.add('idiot-mode-active');
+      
+      // Stop running dynamic spawn checks to prevent resource starvation
+      clearInterval(idiotTimerInterval);
+      
+      // Spawn procedural system error blocks in real-time
+      idiotTimerInterval = setInterval(() => {
+        if (!document.body.classList.contains('idiot-mode-active')) {
+          clearInterval(idiotTimerInterval);
+          return;
+        }
+        
+        // Construct dynamic text frame
+        const banner = document.createElement('div');
+        banner.className = 'idiot-floating-banner';
+        banner.innerText = "YOU ARE AN IDIOT!";
+        
+        // Map random viewport coords
+        const x = Math.random() * (window.innerWidth - 300);
+        const y = Math.random() * (window.innerHeight - 80);
+        
+        banner.style.left = x + 'px';
+        banner.style.top = y + 'px';
+        
+        document.body.appendChild(banner);
+        
+        // Automated decay sequence
+        setTimeout(() => {
+          banner.remove();
+        }, 1800);
+      }, 500); // Spawn every 500ms at 182 BPM offset
+    }
+
+    function cleanupIdiotMode() {
+      document.body.classList.remove('idiot-mode-active');
+      clearInterval(idiotTimerInterval);
+      
+      // Sweep any residual overlay floating entities
+      const residues = document.querySelectorAll('.idiot-floating-banner');
+      residues.forEach(el => el.remove());
+    }
+  </script>

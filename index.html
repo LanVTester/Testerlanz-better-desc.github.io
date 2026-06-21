@@ -26,13 +26,13 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Crimson Land-Guard</title><style>html,body{margin:0;padding:0;background-color:#0a0302;color:#f5ecea;font-family:'Consolas','Courier New',monospace}::selection{background:#ff3300;color:#fff;text-shadow:none}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#0a0302}::-webkit-scrollbar-thumb{background:#ff3300;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#ff9900}:root{--primary:#ff3300;--primary-dark:#800000;--accent:#ff9900;--accent-dark:#cc5200;--bg:#0a0302;--panel-bg:rgba(18,5,2,0.88);--text:#f5ecea;--text-muted:#ab958e;--green:#00ff66;--red:#ff003c;--yellow:#ffcc00}.profile-wrapper{position:relative;background-image:linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)),url('assets/IKuyoCrimson.jpg');background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;border:3px solid var(--primary-dark);border-radius:12px;padding:20px;max-width:980px;margin:20px auto;box-sizing:border-box;overflow:hidden;animation:pulseBorder 8s infinite ease-in-out;cursor:crosshair;transform-style:preserve-3d;perspective:1000px}.profile-wrapper::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,0.25) 50%),linear-gradient(90deg,rgba(255,51,0,0.06),rgba(255,153,0,0.02),rgba(255,0,0,0.06));background-size:100% 4px,3px 100%;z-index:9999;pointer-events:none;opacity:0.4}@keyframes pulseBorder{0%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}50%{border-color:var(--accent);box-shadow:0 0 30px rgba(255,153,0,0.5),inset 0 0 20px rgba(255,153,0,0.3)}100%{border-color:#800000;box-shadow:0 0 15px rgba(255,51,0,0.2),inset 0 0 15px rgba(255,51,0,0.1)}}@keyframes pulseBlink{0%,100%{opacity:0.2}50%{opacity:1}}@keyframes sunsetGlow{0%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}50%{border-color:#ff9900;box-shadow:0 0 25px rgba(255,153,0,0.7)}100%{border-color:#ff3300;box-shadow:0 0 15px rgba(255,51,0,0.4)}}.tactical-divider{display:flex;align-items:center;justify-content:center;margin:20px 0;clear:both}.tactical-divider::before,.tactical-divider::after{content:"";flex-grow:1;height:2px;background:linear-gradient(90deg,transparent,var(--primary),var(--accent),transparent);background-size:200% 100%;animation:flowRight 3s linear infinite}.tactical-divider::after{transform:scaleX(-1)}.tactical-divider span{color:var(--accent);padding:0 15px;font-weight:bold;font-size:14px;letter-spacing:4px;text-shadow:0 0 8px var(--accent);display:inline-block;animation:float-pulse 3s ease-in-out infinite}.tactical-panel{background:var(--panel-bg);border:1px solid rgba(255,51,0,0.2);border-left:4px solid var(--primary);border-radius:4px;padding:12px;margin-bottom:15px;box-sizing:border-box;backdrop-filter:blur(8px);position:relative;overflow:hidden;transform-style:preserve-3d;transition:all 0.4s cubic-bezier(0.25,0.8,0.25,1)}.tactical-panel::before{content:"";position:absolute;top:-100%;left:-100%;width:50%;height:300%;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.05),rgba(255,255,255,0));transform:rotate(45deg);transition:all 0.6s}.tactical-panel:hover::before{top:100%;left:100%}.tactical-panel:hover{border-color:var(--accent);background:rgba(25,5,0,0.92);transform:translateY(-5px) scale(1.02);box-shadow:0 10px 30px rgba(255,153,0,0.2),inset 0 0 15px rgba(255,51,0,0.3)}.panel-title{font-size:13px;font-weight:bold;color:#fff;text-transform:uppercase;border-bottom:1px solid rgba(255,51,0,0.3);padding-bottom:5px;margin-bottom:10px;letter-spacing:1px;text-shadow:0 0 5px var(--primary);display:flex;align-items:center}.panel-title span{color:var(--accent);margin-right:8px;font-size:16px;text-shadow:0 0 5px var(--accent)}.tactical-list{list-style:none;padding:0;margin:0}.tactical-list li{padding:5px 0;border-bottom:1px dashed rgba(255,51,0,0.15);font-size:12px;line-height:1.4;transition:all 0.2s ease-in-out}.tactical-list li:hover{transform:translateX(5px);color:#fff;background:rgba(255,51,0,0.1);border-radius:4px;padding-left:5px;border-bottom-color:transparent}.tactical-list li:last-child{border-bottom:none}.tactical-badge{font-weight:bold;color:#fff;margin-right:5px}.tactical-link{color:var(--accent);text-decoration:none;transition:color 0.2s;font-weight:bold}.tactical-link:hover{color:#fff;text-decoration:underline;text-shadow:0 0 8px var(--accent)}.flex-row{display:flex;flex-wrap:wrap;gap:12px;width:100%;box-sizing:border-box}.flex-col{flex:1 1 250px;min-width:250px;box-sizing:border-box}.stat-box{background:rgba(0,0,0,0.7);border:1px solid rgba(255,51,0,0.15);padding:10px;border-radius:4px;text-align:center;box-sizing:border-box;position:relative;overflow:hidden;z-index:1;transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.stat-box.green{background:linear-gradient(0deg,rgba(0,255,102,0.08),rgba(0,0,0,0.7) 60%);border-color:rgba(0,255,102,0.3)}.stat-box.red{background:linear-gradient(180deg,rgba(255,0,60,0.08),rgba(0,0,0,0.7) 60%);border-color:rgba(255,0,60,0.3)}.stat-box::after{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1;transition:transform 0.4s ease}.stat-box.green::after{bottom:0;background:linear-gradient(0deg,rgba(0,255,102,0.25),transparent);transform:translateY(100%)}.stat-box.red::after{top:0;background:linear-gradient(180deg,rgba(255,0,60,0.25),transparent);transform:translateY(-100%)}.stat-box.green:hover::after,.stat-box.red:hover::after{transform:translateY(0)}.stat-box:hover{transform:translateY(-4px);box-shadow:0 8px 15px rgba(0,0,0,0.6)}.stat-box.green:hover{transform:translateY(-4px);border-color:var(--green)!important;box-shadow:0 8px 20px rgba(0,255,102,0.2)}.stat-box.red:hover{transform:translateY(4px);border-color:var(--red)!important;box-shadow:0 -8px 20px rgba(255,0,60,0.2)}.stat-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.stat-value{font-size:14px;font-weight:bold}.stat-value.green{color:var(--green);text-shadow:0 0 5px var(--green)}.stat-value.red{color:var(--red);text-shadow:0 0 5px var(--red)}.tactical-video-container{margin:0 auto 20px auto;width:100%;max-width:600px;background:#000;padding:6px;border:2px solid var(--primary);border-radius:6px;box-sizing:border-box;animation:sunsetGlow 4s infinite ease-in-out}@keyframes glitch-anim{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}.glitch-hover{transition:all 0.2s}.glitch-hover:hover{animation:glitch-anim 0.25s infinite;text-shadow:2px 0 var(--accent),-2px 0 var(--red)!important}@keyframes float-pulse{0%,100%{transform:translateY(0);text-shadow:0 0 8px var(--accent)}50%{transform:translateY(-4px);text-shadow:0 0 20px var(--accent),0 0 30px var(--primary)}}@keyframes flowRight{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes topGlow{0%{box-shadow:0 0 15px rgba(128,0,0,0.6)}100%{box-shadow:0 0 25px rgba(255,153,0,0.8)}}.top-gif-wrapper{padding:3px;background:linear-gradient(to right,#8b0000,#ff8c00);border-radius:8px;display:inline-block;margin:0 auto 10px auto;animation:topGlow 3s infinite alternate}@keyframes sweepCrimsonPulse{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.bottom-pulse-wrapper{padding:4px;background:linear-gradient(90deg,#ff3300,#4a0000,#ff3300);background-size:200% 200%;animation:sweepCrimsonPulse 3s infinite ease-in-out;border-radius:8px;display:inline-block;box-shadow:inset 0 0 10px rgba(0,0,0,0.6)}.hover-pop{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-pop:hover{transform:scale(1.03);box-shadow:0 0 25px var(--primary)!important;z-index:10}.hover-lift{transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1)}.hover-lift:hover{transform:translateY(-5px);border-color:var(--accent)!important;box-shadow:0 10px 20px rgba(0,0,0,0.7)}.history-line{transition:all 0.2s}.history-line:hover{padding-left:18px!important;background:rgba(255,51,0,0.1);border-left-color:var(--accent)!important}.policy-box{transition:all 0.3s}.policy-box:hover{transform:scale(1.02);box-shadow:inset 0 0 20px rgba(255,51,0,0.3),0 10px 20px rgba(0,0,0,0.7)}@media only screen and (max-width:768px){body>div:first-of-type,.profile-wrapper{max-width:100%!important;margin:0!important;padding:10px!important}.flex-col,div[style*="min-width:250px"],div[style*="min-width: 250px"]{width:100%!important;min-width:100%!important;flex:0 1 auto!important;height:auto!important}.flex-row,div[style*="gap:12px"]{flex-direction:column!important;height:auto!important}.stat-box{height:auto!important;margin-bottom:8px}}
 
   /* ==========================================================================
-     INTEGRATED TACTICAL INTRO & CONTROL INTERFACE STYLES
+     TACTICAL CONSOLE CONTROL INTERFACE & COMPLEX DYNAMIC STYLES
      ========================================================================== */
   body.intro-active {
     overflow: hidden;
   }
 
-  /* 1. Intro Overlay System */
+  /* 1. Entry Screen Layout */
   #intro-overlay {
     position: fixed;
     top: 0;
@@ -92,7 +92,7 @@
     box-shadow: 0 0 30px rgba(255, 153, 0, 0.9);
   }
 
-  /* Disclaimer Panel */
+  /* Performance disclaimer card */
   .intro-disclaimer {
     color: #802015;
     font-size: 11px;
@@ -135,7 +135,7 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     opacity: 0;
-    transition: opacity 0.25s ease-in-out; /* Slightly faster transition */
+    transition: opacity 0.25s ease-in-out;
     z-index: 6;
     text-align: center;
     padding: 20px;
@@ -161,7 +161,7 @@
     pointer-events: auto;
   }
 
-  /* 2. Toggleable Overlay Controls */
+  /* 2. Hardware toggles logic */
   body.no-scanlines .profile-wrapper::after {
     background: none !important;
   }
@@ -172,7 +172,7 @@
     animation-play-state: paused !important;
   }
 
-  /* 3. Global Floating Menu Button */
+  /* 3. Global Floating Trigger button */
   #sidebar-toggle-btn {
     position: fixed;
     top: 15px;
@@ -200,7 +200,7 @@
     box-shadow: 0 0 25px rgba(255, 51, 0, 0.8);
   }
 
-  /* 4. Collapsible Sidebar UI */
+  /* 4. Console Sidebar Drawer */
   #tactical-sidebar {
     position: fixed;
     top: 0;
@@ -259,7 +259,6 @@
     font-size: 11px;
   }
 
-  /* Scrollbar customized for sidebar */
   .sidebar-content::-webkit-scrollbar {
     width: 4px;
   }
@@ -297,7 +296,7 @@
     margin-bottom: 0;
   }
 
-  /* Toggle Switches */
+  /* Switches custom styles */
   .switch {
     position: relative;
     display: inline-block;
@@ -346,7 +345,6 @@
     background-color: var(--accent);
   }
 
-  /* Range inputs */
   .range-slider {
     width: 100%;
     background: #220a05;
@@ -374,7 +372,6 @@
     margin-top: 4px;
   }
 
-  /* Audio Track Listing styling */
   .track-list {
     list-style: none;
     padding: 0;
@@ -442,7 +439,6 @@
     color: #fff;
   }
 
-  /* Hidden Anchor player for direct YouTube streaming API */
   #yt-player {
     position: absolute;
     width: 1px;
@@ -452,10 +448,10 @@
   }
 
   /* ==========================================================================
-     PROGRESSIVE IDIOT MODE SYSTEM STYLES
+     YAAI SONG EVENT PROGRESSIVE INTERFACE STYLES
      ========================================================================== */
   
-  /* Stage 1-2 (Mild Strobing) */
+  /* Stage 1-2 (Mild strobe and inverse logic) */
   body.idiot-mild {
     animation: mildStrobe 1s infinite alternate;
   }
@@ -464,7 +460,7 @@
     100% { background-color: #2a0005; }
   }
 
-  /* Stage 3-4 (Chaotic strobing & translations) */
+  /* Stage 3-4 (Chaotic raw stroke flashes - no glow animations) */
   body.idiot-hard {
     animation: hardStrobe 0.15s infinite steps(2, start) !important;
   }
@@ -489,10 +485,10 @@
   }
   @keyframes extremeVibrate {
     0% { transform: translate(0, 0) rotate(0deg); }
-    20% { transform: translate(-4px, 3px) rotate(-1deg); }
-    40% { transform: translate(3px, -2px) rotate(1deg); }
-    60% { transform: translate(-3px, -3px) rotate(-1.5deg); }
-    80% { transform: translate(4px, 4px) rotate(1.5deg); }
+    20% { transform: translate(-5px, 4px) rotate(-1.5deg); }
+    40% { transform: translate(4px, -3px) rotate(1.5deg); }
+    60% { transform: translate(-4px, -4px) rotate(-2deg); }
+    80% { transform: translate(5px, 5px) rotate(2deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
   }
 
@@ -505,7 +501,7 @@
     100% { transform: scale(1.08); }
   }
 
-  /* Dynamic Alert Elements */
+  /* Warning Flash Overlay Banner */
   #idiot-center-alert {
     position: fixed;
     top: 50%;
@@ -515,34 +511,34 @@
     font-family: 'Consolas', monospace;
     font-weight: 900;
     font-size: 38px;
-    color: #ff003c;
-    background: #000;
-    border: 4px solid #ff003c;
+    color: #000;
+    background: #fff;
+    border: 5px solid #000;
     padding: 20px 40px;
     text-align: center;
     letter-spacing: 3px;
-    box-shadow: 0 0 40px #ff003c;
+    box-shadow: 0 0 40px rgba(255,255,255,0.8);
     animation: flashAlert 0.2s infinite alternate;
   }
   @keyframes flashAlert {
-    0% { filter: drop-shadow(0 0 20px #ff003c); border-color: #ff003c; }
-    100% { filter: drop-shadow(0 0 50px #ff3300); border-color: #ff9900; transform: translate(-50%, -50%) scale(1.05); }
+    0% { border-color: #000; background-color: #fff; color: #000; }
+    100% { border-color: #fff; background-color: #000; color: #fff; transform: translate(-50%, -50%) scale(1.05); }
   }
 
-  /* Floating banners during progressive deterioration */
+  /* High contrast monochrome spawned text banners */
   .idiot-floating-banner {
     position: fixed;
     font-family: 'Consolas', monospace;
     font-weight: 900;
     font-size: 24px;
-    color: #ff003c;
-    background: #000;
-    border: 3px solid #fff;
+    color: #000;
+    background: #fff;
+    border: 3px solid #000;
     padding: 10px 20px;
     z-index: 99997;
     pointer-events: none;
     letter-spacing: 2px;
-    box-shadow: 0 0 20px #ff003c;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
     animation: bannerGlitch 0.15s infinite alternate;
   }
@@ -551,7 +547,58 @@
     100% { transform: translate(-1px, 2px) skewX(4deg); filter: invert(1); }
   }
 
-  /* Stage 5: Laugh overlay wall */
+  /* 5. Screensaver DVD / CRT Bouncing face window */
+  .bouncing-box {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    z-index: 99997;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Consolas', monospace;
+    pointer-events: auto;
+  }
+  .bouncing-box-header {
+    background: #fff;
+    color: #000;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .bouncing-box-close {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    padding: 0 3px;
+  }
+  .bouncing-box-close:hover {
+    color: #ff3300;
+  }
+  .bouncing-box-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    user-select: none;
+    text-shadow: none !important;
+  }
+
+  /* Stage 5 Matrix Laughter layer */
   #laugh-overlay {
     position: fixed;
     top: 0;
@@ -578,7 +625,7 @@
     100% { transform: translate(-1px, 1px) skewY(-1deg); }
   }
 
-  /* Stage 6: Full screen blinding strobe pulse */
+  /* Stage 6 fullscreen flash pulse */
   #pulse-overlay {
     position: fixed;
     top: 0;
@@ -593,7 +640,6 @@
     50% { background: #000; }
   }
 
-  /* Responsive styling adjust for sidebar visibility */
   @media only screen and (max-width: 768px) {
     #tactical-sidebar {
       width: 290px;
@@ -639,7 +685,7 @@
     
     <div class="sidebar-content">
       
-      <!-- Video / Now Playing Info -->
+      <!-- Now Playing Info -->
       <div class="sidebar-section">
         <div class="sidebar-section-title">Now Streaming</div>
         <div class="now-playing-box" id="now-playing">Initialising client configuration...</div>
@@ -678,8 +724,8 @@
         <div class="control-group">
           <span>Output Gain</span>
           <div style="width: 60%;">
-            <input type="range" class="range-slider" id="audio-volume" min="0" max="100" value="15">
-            <div class="slider-value" id="volume-val">15%</div>
+            <input type="range" class="range-slider" id="audio-volume" min="0" max="100" value="10">
+            <div class="slider-value" id="volume-val">10%</div>
           </div>
         </div>
 
@@ -711,6 +757,9 @@
     </div>
   </aside>
 
+  <!-- Local Audio playback element -->
+  <audio id="local-audio" src="assets/YOUAREANIDIOTYAAI.mp3" preload="auto"></audio>
+
   <!-- YouTube Direct Engine Mount -->
   <div id="yt-player"></div>
 
@@ -718,7 +767,6 @@
   <div class="profile-wrapper">
     <div style="background:rgba(0,0,0,0.85);border:1px solid var(--primary);border-radius:6px;padding:15px;text-align:center;margin-bottom:15px;box-sizing:border-box;">
       <div class="top-gif-wrapper">
-        <!-- Replaced top gif asset -->
         <img src="assets/blinkiesCafe-TheSkyIsNice.gif" style="display:block;border-radius:5px;max-width:100%;box-sizing:border-box;">
       </div>
       <div style="font-size:18px;font-weight:bold;color:#ffffff;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;line-height:1.3;word-wrap:break-word;text-shadow:0 0 8px var(--primary);" class="glitch-hover">"The Sky Surely Looks Nice Today, Ain't It?"</div>
@@ -1002,47 +1050,48 @@
         <iframe src="https://www.youtube.com/embed/V4elF4---KQ?autoplay=0" style="width:100%;aspect-ratio:16/9;border:none;display:block;" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen="true"></iframe>
       </div>
       <div class="bottom-pulse-wrapper">
-        <!-- Replaced bottom gif asset -->
         <img src="assets/blinkiesCafe-TheCrimsonLandGuard.gif" style="display:block;border-radius:4px;max-width:100%;box-sizing:border-box;">
       </div>
     </div>
   </div>
 
-  <!-- LOAD YOUTUBE IFRAME STREAMING API -->
   <script src="https://www.youtube.com/iframe_api"></script>
 
-  <!-- CONTROL SYSTEM CORE ROUTINES -->
   <script>
-    // 1. Music Database Configuration Map
+    // 1. Updated Playlist Metadata configuration map (Aa / Stylized casing)
     const tracksList = [
-      { id: "cJyPtpldb78", name: "Sutekimeppou", probability: 9.4 },
-      { id: "tzOrOyi8LP8", name: "Kegen", probability: 9.4 },
-      { id: "aw7K8uOqGtA", name: "Decryption", probability: 9.4 },
-      { id: "z3wSvcCnPyQ", name: "Limbus Company Menu", probability: 9.4 },
-      { id: "NkNy9qDWiAw", name: "Sun - Reload / Persona 3 Reload", probability: 9.4 },
-      { id: "6otKikv4kvo", name: "TIAN TIAN", probability: 9.4 },
-      { id: "ZuifkacZ0TA", name: "Hero", probability: 9.4 },
-      { id: "IJN0piNZhBE", name: "The Shovel", probability: 9.4 },
-      { id: "sqK-jh4TDXo", name: "Machine Love~", probability: 9.4 },
-      { id: "evloseZCQcc", name: "New World", probability: 9.4 },
-      { id: "WYER0HZMMnI", name: "YO MAMA! (Joke Track)", probability: 5.0 },
-      { id: "udiDAYzMRmA", name: "☺ DO NOT USE ☻", probability: 1.0 } // Renamed to fit request
+      { id: "cJyPtpldb78", name: "Sutekimeppou", probability: 7.833 },
+      { id: "tzOrOyi8LP8", name: "Kegen", probability: 7.833 },
+      { id: "aw7K8uOqGtA", name: "Decryption", probability: 7.833 },
+      { id: "z3wSvcCnPyQ", name: "Limbus Company Menu", probability: 7.833 },
+      { id: "NkNy9qDWiAw", name: "Sun - Reload / Persona 3 Reload", probability: 7.833 },
+      { id: "6otKikv4kvo", name: "Tian Tian", probability: 7.833 },
+      { id: "ZuifkacZ0TA", name: "Hero", probability: 7.833 },
+      { id: "IJN0piNZhBE", name: "The Shovel", probability: 7.833 },
+      { id: "sqK-jh4TDXo", name: "Machine Love~", probability: 7.833 },
+      { id: "evloseZCQcc", name: "New World", probability: 7.833 },
+      { id: "zrfeBCgQvtc", name: "Ringtone", probability: 7.833 },                      // New track added
+      { id: "CB6r97OhQIg", name: "Brothers Are Just Like That", probability: 7.833 },   // New track added
+      { id: "WYER0HZMMnI", name: "Yo Mama! (Joke Track)", probability: 5.0 },
+      { id: "assets/YOUAREANIDIOTYAAI.mp3", name: "☺ Do Not Use ☻", probability: 1.0 } // MP3 format identifier
     ];
 
     let ytPlayer = null;
     let selectedTrackIndex = null;
     let fadeInterval = null;
-    let currentVolume = 15; // default low target
+    let currentVolume = 10; // Default output gain remapped to 10%
     let isTransitioning = false;
     let inputCooldown = false;
 
-    // Progressive Idiot Mode Tracker Variables
+    // YAAI Event Tracking Registers
     let idiotPollInterval = null;
     let idiotSpawnInterval = null;
     let idiotTimeouts = [];
     let currentIdiotStage = -1;
+    let activeBoxes = [];
+    let animationFrameId = null;
 
-    // 2. Initialize YouTube Player API Frame
+    // 2. Headless Streaming Engine initialization
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('yt-player', {
         height: '1',
@@ -1070,17 +1119,17 @@
 
     function onPlayerStateChange(event) {
       if (event.data === YT.PlayerState.ENDED) {
-        if (tracksList[selectedTrackIndex].id === "udiDAYzMRmA") {
-          // Track 12 finished standard loop or auto skip trigger
-          cleanupIdiotMode();
-          playRandomWeightedTrack();
-        } else {
-          playRandomWeightedTrack();
-        }
+        playRandomWeightedTrack();
       }
     }
 
-    // 3. Probabilistic Track Selection Core Logic
+    // Bind HTML5 audio player end event to autoplay next track
+    document.getElementById('local-audio').addEventListener('ended', () => {
+      cleanupIdiotMode();
+      playRandomWeightedTrack();
+    });
+
+    // 3. RNG Evaluator Mapping
     function getWeightedRandomTrackIndex() {
       const rand = Math.random() * 100;
       let cumulative = 0;
@@ -1117,22 +1166,22 @@
       const fadeEndVal = document.getElementById('fade-end-val');
       const playlistContainer = document.getElementById('playlist-element');
 
-      // Setup Volume display
+      // Initialize defaults
       currentVolume = parseInt(volSlider.value);
 
-      // Render manual playlist selectors inside sidebar console
+      // Populate interactive manual console streams
       tracksList.forEach((track, idx) => {
         const li = document.createElement('li');
         li.className = 'track-item';
         li.dataset.index = idx;
         
         let labelName = track.name;
-        if (track.id === "udiDAYzMRmA") {
+        if (track.id === "assets/YOUAREANIDIOTYAAI.mp3") {
           li.style.color = "var(--red)";
           li.style.fontWeight = "bold";
         }
 
-        li.innerHTML = `<span>${idx + 1}. ${labelName}</span><span class="track-pct">${track.probability}%</span>`;
+        li.innerHTML = `<span>${idx + 1}. ${labelName}</span><span class="track-pct">${track.probability.toFixed(1)}%</span>`;
         playlistContainer.appendChild(li);
 
         li.addEventListener('click', () => {
@@ -1142,20 +1191,18 @@
         });
       });
 
-      // Prevent spam triggers
       function triggerCooldown() {
         inputCooldown = true;
-        setTimeout(() => { inputCooldown = false; }, 2000); // 2 second block
+        setTimeout(() => { inputCooldown = false; }, 2000);
       }
 
-      // Handle Intro Screen Interactivity
       enterBtn.addEventListener('click', () => {
         enterBtn.style.display = 'none';
         document.querySelector('.intro-disclaimer').style.display = 'none';
         
         introVideo.style.display = 'block';
         introVideo.play().catch(err => {
-          console.warn("Local video playback failed. Skipping directly:", err);
+          console.warn("Autoplay permission block or file error, skipping splash:", err);
           handleVideoEnd();
         });
       });
@@ -1166,7 +1213,6 @@
         introVideo.style.display = 'none';
         techyText.style.display = 'block';
         
-        // Speedy splash transition
         techyText.offsetHeight;
         techyText.style.opacity = '1';
 
@@ -1175,16 +1221,15 @@
           document.body.classList.remove('intro-active');
           profileWrapper.classList.add('visible');
 
-          // Initialize background audio routines on user click event transition context
           playRandomWeightedTrack();
 
           setTimeout(() => {
             introOverlay.remove();
           }, 800);
-        }, 800); // Accelerated splash screen delay
+        }, 800);
       }
 
-      // Sidebar collapse controls
+      // Collapsible Console Controls
       sidebarToggleBtn.addEventListener('click', () => {
         sidebar.classList.add('expanded');
         sidebarToggleBtn.style.display = 'none';
@@ -1195,7 +1240,6 @@
         sidebarToggleBtn.style.display = 'block';
       });
 
-      // Scanline & glow overrides mapping
       toggleScanlines.addEventListener('change', (e) => {
         if (!e.target.checked) {
           document.body.classList.add('no-scanlines');
@@ -1212,12 +1256,18 @@
         }
       });
 
-      // Audio manual parameters mapping
+      // Volume sliders mapping
       volSlider.addEventListener('input', (e) => {
         currentVolume = parseInt(e.target.value);
         volVal.innerText = currentVolume + "%";
-        if (ytPlayer && !isTransitioning) {
+        
+        // Update live output gain inside both engines
+        if (ytPlayer && typeof ytPlayer.setVolume === 'function') {
           ytPlayer.setVolume(currentVolume);
+        }
+        const localAudio = document.getElementById('local-audio');
+        if (localAudio) {
+          localAudio.volume = currentVolume / 100;
         }
       });
 
@@ -1229,19 +1279,25 @@
       });
 
       playBtn.addEventListener('click', () => {
-        if (ytPlayer && ytPlayer.playVideo) {
+        const track = tracksList[selectedTrackIndex];
+        if (track && track.id === "assets/YOUAREANIDIOTYAAI.mp3") {
+          document.getElementById('local-audio').play();
+        } else if (ytPlayer && ytPlayer.playVideo) {
           ytPlayer.playVideo();
         }
       });
 
       pauseBtn.addEventListener('click', () => {
-        if (ytPlayer && ytPlayer.pauseVideo) {
+        const track = tracksList[selectedTrackIndex];
+        if (track && track.id === "assets/YOUAREANIDIOTYAAI.mp3") {
+          document.getElementById('local-audio').pause();
+        } else if (ytPlayer && ytPlayer.pauseVideo) {
           ytPlayer.pauseVideo();
         }
       });
     });
 
-    // 4. Custom Interpolated Audio Playback Engine
+    // 4. Playback Routing Core (Hybrid Stream Selector)
     function playRandomWeightedTrack() {
       const idx = getWeightedRandomTrackIndex();
       executeTrackTransition(idx);
@@ -1256,10 +1312,9 @@
       if (isTransitioning) return;
       isTransitioning = true;
 
-      // Ensure we immediately clean up any lingering Easter Egg states
       cleanupIdiotMode();
 
-      // Update manual playlist highlight classes
+      // Highlight target Console index
       const items = document.querySelectorAll('.track-item');
       items.forEach(el => el.classList.remove('active'));
       const activeElement = document.querySelector(`.track-item[data-index="${trackIndex}"]`);
@@ -1267,7 +1322,7 @@
         activeElement.classList.add('active');
       }
 
-      // Dynamic 50% chance background art rendering
+      // Dynamic Background art roll
       const profile = document.querySelector('.profile-wrapper');
       if (Math.random() < 0.5) {
         profile.style.backgroundImage = "linear-gradient(rgba(10,3,2,0.88),rgba(10,3,2,0.88)), url('assets/NIJIKAYellow.jpg')";
@@ -1283,33 +1338,62 @@
 
       clearInterval(fadeInterval);
 
-      let currentVol = ytPlayer.getVolume();
+      // Assess playing sources and fetch level parameters
+      const localAudio = document.getElementById('local-audio');
+      let isYtActive = (ytPlayer.getPlayerState && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING);
+      let isLocalActive = (localAudio && !localAudio.paused);
+
+      let initialVol = isYtActive ? ytPlayer.getVolume() : (isLocalActive ? localAudio.volume * 100 : 0);
+
       const fadeOutSteps = 20;
       const fadeOutIntervalTime = (fadeOutSec * 1000) / fadeOutSteps;
       let stepCount = 0;
 
-      if (currentVol > 0 && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+      if (initialVol > 0 && (isYtActive || isLocalActive)) {
         fadeInterval = setInterval(() => {
           stepCount++;
-          let tempVol = currentVol - (currentVol * (stepCount / fadeOutSteps));
-          ytPlayer.setVolume(Math.max(0, tempVol));
+          let tempVol = initialVol - (initialVol * (stepCount / fadeOutSteps));
+          
+          if (isYtActive) {
+            ytPlayer.setVolume(Math.max(0, tempVol));
+          } else {
+            localAudio.volume = Math.max(0, tempVol / 100);
+          }
 
           if (stepCount >= fadeOutSteps) {
             clearInterval(fadeInterval);
+            
+            // Terminate both engines physically
+            ytPlayer.stopVideo();
+            localAudio.pause();
+            localAudio.currentTime = 0;
+
             loadAndFadeInNextTrack(nextTrack, fadeInSec);
           }
         }, fadeOutIntervalTime);
       } else {
+        ytPlayer.stopVideo();
+        localAudio.pause();
+        localAudio.currentTime = 0;
         loadAndFadeInNextTrack(nextTrack, fadeInSec);
       }
     }
 
     function loadAndFadeInNextTrack(track, fadeInSec) {
       document.getElementById('now-playing').innerText = track.name + " (Loading...)";
+      const localAudio = document.getElementById('local-audio');
 
-      ytPlayer.loadVideoById(track.id, 0);
-      ytPlayer.setVolume(0);
-      ytPlayer.playVideo();
+      const isLocalFile = track.id.endsWith(".mp3");
+
+      if (isLocalFile) {
+        localAudio.src = track.id;
+        localAudio.volume = 0;
+        localAudio.play().catch(err => console.warn("Local play failed:", err));
+      } else {
+        ytPlayer.loadVideoById(track.id, 0);
+        ytPlayer.setVolume(0);
+        ytPlayer.playVideo();
+      }
 
       const fadeInSteps = 20;
       const fadeInIntervalTime = (fadeInSec * 1000) / fadeInSteps;
@@ -1319,34 +1403,44 @@
       fadeInterval = setInterval(() => {
         stepCount++;
         let targetVol = (currentVolume * (stepCount / fadeInSteps));
-        ytPlayer.setVolume(Math.min(currentVolume, targetVol));
+        
+        if (isLocalFile) {
+          localAudio.volume = Math.min(currentVolume, targetVol) / 100;
+        } else {
+          ytPlayer.setVolume(Math.min(currentVolume, targetVol));
+        }
 
         if (stepCount >= fadeInSteps) {
           clearInterval(fadeInterval);
-          ytPlayer.setVolume(currentVolume);
+          
+          if (isLocalFile) {
+            localAudio.volume = currentVolume / 100;
+          } else {
+            ytPlayer.setVolume(currentVolume);
+          }
+          
           document.getElementById('now-playing').innerText = track.name + " [ONLINE]";
           isTransitioning = false;
 
-          // Track 12 Event Loop Initialisation
-          if (track.id === "udiDAYzMRmA") {
+          // Boot progressive script engine if Track 14 is active
+          if (isLocalFile) {
             initiateIdiotMode();
           }
         }
       }, fadeInIntervalTime);
     }
 
-    // Helper to spawn absolute floating text frames
+    // Helper to spawn absolute high-contrast warnings
     function spawnFloatingText(text, color, duration, isEmoji = false) {
       const banner = document.createElement('div');
       banner.className = 'idiot-floating-banner';
       banner.innerText = text;
+      
       if (isEmoji) {
         banner.style.fontSize = '32px';
         banner.style.border = 'none';
         banner.style.background = 'transparent';
         banner.style.boxShadow = 'none';
-      } else {
-        banner.style.color = color;
       }
 
       const x = Math.random() * (window.innerWidth - 320);
@@ -1358,23 +1452,94 @@
       setTimeout(() => { banner.remove(); }, duration);
     }
 
-    // 5. Progressive Idiot Mode Event Routine
-    function initiateIdiotMode() {
-      cleanupIdiotMode(); // Safe baseline sweep
+    // Helper to spawn vector bouncing faces (original replica loop)
+    function spawnBouncingBox() {
+      const box = document.createElement('div');
+      box.className = 'bouncing-box';
+      box.innerHTML = `
+        <div class="bouncing-box-header">
+          <span>SYSTEM ERROR</span>
+          <button class="bouncing-box-close">&times;</button>
+        </div>
+        <div class="bouncing-box-content">☺</div>
+      `;
 
+      let faceState = true;
+      const faceInterval = setInterval(() => {
+        faceState = !faceState;
+        box.querySelector('.bouncing-box-content').innerText = faceState ? '☺' : '☻';
+      }, 150);
+
+      box.querySelector('.bouncing-box-close').addEventListener('click', () => {
+        clearInterval(faceInterval);
+        box.remove();
+        activeBoxes = activeBoxes.filter(b => b.el !== box);
+      });
+
+      const boxData = {
+        el: box,
+        x: Math.random() * (window.innerWidth - 150),
+        y: Math.random() * (window.innerHeight - 150),
+        dx: (Math.random() < 0.5 ? -1 : 1) * (2.5 + Math.random() * 3.5),
+        dy: (Math.random() < 0.5 ? -1 : 1) * (2.5 + Math.random() * 3.5),
+        w: 150,
+        h: 150,
+        faceInterval: faceInterval
+      };
+
+      activeBoxes.push(boxData);
+      document.body.appendChild(box);
+    }
+
+    // Bouncing vector continuous simulation
+    function updateBouncingBoxes() {
+      if (activeBoxes.length > 0) {
+        activeBoxes.forEach(box => {
+          box.x += box.dx;
+          box.y += box.dy;
+
+          if (box.x + box.w >= window.innerWidth) {
+            box.x = window.innerWidth - box.w;
+            box.dx = -box.dx;
+          } else if (box.x <= 0) {
+            box.x = 0;
+            box.dx = -box.dx;
+          }
+
+          if (box.y + box.h >= window.innerHeight) {
+            box.y = window.innerHeight - box.h;
+            box.dy = -box.dy;
+          } else if (box.y <= 0) {
+            box.y = 0;
+            box.dy = -box.dy;
+          }
+
+          box.el.style.left = box.x + 'px';
+          box.el.style.top = box.y + 'px';
+        });
+      }
+      animationFrameId = requestAnimationFrame(updateBouncingBoxes);
+    }
+
+    // Start floating animation runner
+    updateBouncingBoxes();
+
+    // 5. YAAI Progressive Threat levels
+    function initiateIdiotMode() {
+      cleanupIdiotMode();
       currentIdiotStage = -1;
 
-      // Poll playback duration to update stages dynamically
-      idiotPollInterval = setInterval(() => {
-        if (!ytPlayer || typeof ytPlayer.getCurrentTime !== 'function') return;
-        
-        const time = ytPlayer.getCurrentTime();
+      const localAudio = document.getElementById('local-audio');
 
-        // Stage 0: Calm (0-5s)
+      idiotPollInterval = setInterval(() => {
+        if (!localAudio) return;
+        const time = localAudio.currentTime;
+
+        // Stage 0: Calm (0s - 5s)
         if (time >= 0 && time < 5) {
           if (currentIdiotStage !== 0) {
             currentIdiotStage = 0;
-            document.body.className = ''; // standard clean body
+            document.body.className = '';
             if (document.getElementById('toggle-scanlines').checked === false) document.body.classList.add('no-scanlines');
             if (document.getElementById('toggle-glow').checked === false) document.body.classList.add('no-glow');
           }
@@ -1385,12 +1550,24 @@
             currentIdiotStage = 1;
             document.body.className = 'idiot-mild';
 
-            // Spawns warnings slow sequence
-            const phrases = ["THIS IS YOUR WORSE MISTAKE, CHANGE AUDIO NOW", "&#layer3:", "실수", "間違い"];
+            const phrases = [
+              "THIS IS YOUR WORSE MISTAKE, CHANGE AUDIO NOW", 
+              "&#layer3:", 
+              "실수", 
+              "間違い",
+              "CRITICAL INTERFACE CORRUPTION",
+              "UNAUTHORIZED TRANSMISSION",
+              "SYSTEM HAZARD"
+            ];
             let phraseIdx = 0;
             
+            // Soft transition: Spawning accelerates as Stage 2 nears
             idiotSpawnInterval = setInterval(() => {
-              spawnFloatingText(phrases[phraseIdx % phrases.length], "#ff3300", 2500);
+              const currentOffset = localAudio.currentTime;
+              let currentSpawnDelay = 1200;
+              if (currentOffset > 8) currentSpawnDelay = 600; // Soft ramp speed
+
+              spawnFloatingText(phrases[phraseIdx % phrases.length], "#000", 2500);
               phraseIdx++;
             }, 1200);
           }
@@ -1400,56 +1577,89 @@
           if (currentIdiotStage !== 2) {
             currentIdiotStage = 2;
             clearInterval(idiotSpawnInterval);
-            document.body.className = 'idiot-hard';
+            document.body.className = 'idiot-hard no-glow'; // Disable glows completely for raw strobe
           }
         }
-        // Stage 3: Threat (20s - 36s)
+        // Stage 3: Alert Trigger (20s - 36s)
         else if (time >= 20 && time < 36) {
           if (currentIdiotStage !== 3) {
             currentIdiotStage = 3;
-            document.body.className = 'idiot-hard';
+            document.body.className = 'idiot-hard no-glow';
 
-            // Mount centered Flash Alert
+            // Mount alert banner
             const alertBox = document.createElement('div');
             alertBox.id = 'idiot-center-alert';
             alertBox.innerText = "WARNING: FLASHING LIGHTS!";
             document.body.appendChild(alertBox);
 
-            // Decay centered warning after 4 seconds
-            let warningTimeout = setTimeout(() => {
+            let alertTimeout = setTimeout(() => {
               if (alertBox) alertBox.remove();
             }, 4000);
-            idiotTimeouts.push(warningTimeout);
+            idiotTimeouts.push(alertTimeout);
+
+            // Soft transition: introduce bouncing frames slowly
+            idiotSpawnInterval = setInterval(() => {
+              const currentOffset = localAudio.currentTime;
+              let spawnRate = 3000;
+              if (currentOffset > 30) spawnRate = 1500; // Soft transition
+              spawnBouncingBox();
+            }, 3000);
           }
         }
-        // Stage 4: Corruption (36s - 90s)
+        // Stage 4: Absolute Corruption (36s - 90s)
         else if (time >= 36 && time < 90) {
           if (currentIdiotStage !== 4) {
             currentIdiotStage = 4;
-            document.body.className = 'idiot-extreme';
+            clearInterval(idiotSpawnInterval);
+            document.body.className = 'idiot-extreme no-glow';
 
-            // High frequency spam execution
-            const spams = ["YOU ARE AN IDIOT", "☻☺☻☺"];
+            const stage4Phrases = [
+              "YOU ARE AN IDIOT", "☻", "☺", "FLASHY!", 
+              "CRITICAL INTERFACE CORRUPTION", "UNAUTHORIZED TRANSMISSION", 
+              "SYSTEM HAZARD", "間違い", "&#layer3:"
+            ];
+
+            // Ultra intense text and box spamming
             idiotSpawnInterval = setInterval(() => {
-              const pickIdx = Math.random() < 0.5 ? 0 : 1;
-              spawnFloatingText(spams[pickIdx], "#ff003c", 1800, pickIdx === 1);
-            }, 300);
+              const currentOffset = localAudio.currentTime;
+              
+              // Floating text generation
+              const textIdx = Math.floor(Math.random() * stage4Phrases.length);
+              const textSelected = stage4Phrases[textIdx];
+              const isSmiley = (textSelected === "☻" || textSelected === "☺");
+              spawnFloatingText(textSelected, "#000", 1500, isSmiley);
+
+              // Progressive window spam rate peaking at 80s
+              let boxSpawnChance = currentOffset > 80 ? 0.35 : 0.2; 
+              if (Math.random() < boxSpawnChance) {
+                spawnBouncingBox();
+              }
+            }, 250);
           }
         }
-        // Stage 5: Laugh Wall (90s - 93s)
+        // Stage 5: Laugh overlay (90s - 93s)
         else if (time >= 90 && time < 93) {
           if (currentIdiotStage !== 5) {
             currentIdiotStage = 5;
-            
-            // Clean up visual banners and spawn intervals
             clearInterval(idiotSpawnInterval);
+            
+            // Purge floating text indicators but retain active bouncing face windows
             const floating = document.querySelectorAll('.idiot-floating-banner');
             floating.forEach(el => el.remove());
 
-            // Silently mute active media track
-            ytPlayer.setVolume(0);
+            // Do not mute track; execute soft fade over 3s
+            let currentVol = localAudio.volume;
+            let fadeOutSteps = 15;
+            let stepCount = 0;
+            let localFadeInterval = setInterval(() => {
+              stepCount++;
+              localAudio.volume = Math.max(0, currentVol - (currentVol * (stepCount / fadeOutSteps)));
+              if (stepCount >= fadeOutSteps) {
+                clearInterval(localFadeInterval);
+              }
+            }, 200);
 
-            // Mount full view laugh wall
+            // Mount full view scrolling laughter overlay
             const laughOverlay = document.createElement('div');
             laughOverlay.id = 'laugh-overlay';
             let laughChain = "";
@@ -1460,22 +1670,27 @@
             document.body.appendChild(laughOverlay);
           }
         }
-        // Stage 6: Final Pulse (93s - 94.5s)
+        // Stage 6: Strobe Pulse (93s - 94.5s)
         else if (time >= 93 && time < 94.5) {
           if (currentIdiotStage !== 6) {
             currentIdiotStage = 6;
             
-            // Remove Laugh overlay
             const laugh = document.getElementById('laugh-overlay');
             if (laugh) laugh.remove();
 
-            // Mount blinding flashing overlay
+            // Clear all bouncing box objects
+            activeBoxes.forEach(box => {
+              clearInterval(box.faceInterval);
+              box.el.remove();
+            });
+            activeBoxes = [];
+
             const pulseOverlay = document.createElement('div');
             pulseOverlay.id = 'pulse-overlay';
             document.body.appendChild(pulseOverlay);
           }
         }
-        // Restoration Point (94.5s)
+        // Autoplay sweep restoration
         else if (time >= 94.5) {
           cleanupIdiotMode();
           playRandomWeightedTrack();
@@ -1485,18 +1700,21 @@
     }
 
     function cleanupIdiotMode() {
-      // Clear checking registers
       clearInterval(idiotPollInterval);
       clearInterval(idiotSpawnInterval);
       
-      // Clear array based timeouts
       idiotTimeouts.forEach(t => clearTimeout(t));
       idiotTimeouts = [];
-
-      // Clean global stage tracker
       currentIdiotStage = -1;
 
-      // Purge state based styling rules
+      // Clear all active bouncing box loops and components
+      activeBoxes.forEach(box => {
+        clearInterval(box.faceInterval);
+        box.el.remove();
+      });
+      activeBoxes = [];
+
+      // Restore baseline console layouts and parameters
       document.body.className = '';
       if (document.getElementById('toggle-scanlines') && document.getElementById('toggle-scanlines').checked === false) {
         document.body.classList.add('no-scanlines');
@@ -1505,7 +1723,7 @@
         document.body.classList.add('no-glow');
       }
 
-      // Sweep dynamic overlay frames
+      // Sweep generated elements
       const alertBox = document.getElementById('idiot-center-alert');
       if (alertBox) alertBox.remove();
 
@@ -1517,6 +1735,13 @@
 
       const floating = document.querySelectorAll('.idiot-floating-banner');
       floating.forEach(el => el.remove());
+
+      // Stop and reset HTML5 player
+      const localAudio = document.getElementById('local-audio');
+      if (localAudio) {
+        localAudio.pause();
+        localAudio.currentTime = 0;
+      }
     }
   </script>
 

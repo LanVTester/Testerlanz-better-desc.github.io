@@ -96,17 +96,18 @@
   .intro-disclaimer {
     color: #802015;
     font-size: 11px;
-    max-width: 480px;
+    max-width: 520px;
     text-align: center;
     line-height: 1.6;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: rgba(18, 5, 2, 0.6);
-    border: 1px solid rgba(255, 51, 0, 0.15);
-    padding: 10px 15px;
-    border-radius: 4px;
+    background: rgba(18, 5, 2, 0.8);
+    border: 1px solid rgba(255, 51, 0, 0.25);
+    padding: 15px;
+    border-radius: 6px;
     z-index: 5;
     pointer-events: none;
+    box-shadow: 0 0 15px rgba(255, 51, 0, 0.1);
   }
 
   .intro-disclaimer span {
@@ -134,7 +135,7 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.25s ease-in-out; /* Slightly faster transition */
     z-index: 6;
     text-align: center;
     padding: 20px;
@@ -171,17 +172,43 @@
     animation-play-state: paused !important;
   }
 
-  /* 3. Collapsible Sidebar UI */
+  /* 3. Global Floating Menu Button */
+  #sidebar-toggle-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99998;
+    background: rgba(10, 3, 2, 0.9);
+    border: 1px solid var(--primary);
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Consolas', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 51, 0, 0.4);
+    transition: all 0.3s;
+  }
+
+  #sidebar-toggle-btn:hover {
+    background: var(--primary);
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 25px rgba(255, 51, 0, 0.8);
+  }
+
+  /* 4. Collapsible Sidebar UI */
   #tactical-sidebar {
     position: fixed;
-    top: 20px;
+    top: 0;
     right: -320px;
     width: 320px;
-    height: calc(100vh - 40px);
-    background: rgba(10, 3, 2, 0.94);
-    border: 2px solid var(--primary-dark);
-    border-right: none;
-    border-radius: 8px 0 0 8px;
+    height: 100vh;
+    background: rgba(10, 3, 2, 0.96);
+    border-left: 2px solid var(--primary-dark);
     z-index: 99999;
     box-sizing: border-box;
     transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -197,39 +224,6 @@
     border-color: var(--primary);
   }
 
-  /* Tab Handle to slide out */
-  #sidebar-handle {
-    position: absolute;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 100px;
-    background: rgba(10, 3, 2, 0.94);
-    border: 2px solid var(--primary-dark);
-    border-right: none;
-    border-radius: 8px 0 0 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    font-weight: bold;
-    font-size: 14px;
-    writing-mode: vertical-lr;
-    transform: translateY(-50%) rotate(180deg);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-    transition: all 0.3s;
-  }
-
-  #tactical-sidebar.expanded #sidebar-handle {
-    border-color: var(--primary);
-    color: #fff;
-    background: var(--primary-dark);
-  }
-
   .sidebar-header {
     border-bottom: 2px solid rgba(255, 51, 0, 0.3);
     padding: 15px;
@@ -237,8 +231,25 @@
     font-weight: bold;
     color: #fff;
     letter-spacing: 1px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
+  }
+
+  #sidebar-close-btn {
+    background: transparent;
+    border: none;
+    color: var(--accent);
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+    transition: color 0.2s;
+  }
+
+  #sidebar-close-btn:hover {
+    color: #fff;
   }
 
   .sidebar-content {
@@ -440,94 +451,164 @@
     pointer-events: none;
   }
 
-  /* 4. YOU ARE AN IDIOT Event Styles */
-  body.idiot-mode-active {
-    background-color: #fff !important;
-    animation: idiotStrobeBPM 0.329s infinite steps(2, start) !important; /* 182 BPM strobe rate */
+  /* ==========================================================================
+     PROGRESSIVE IDIOT MODE SYSTEM STYLES
+     ========================================================================== */
+  
+  /* Stage 1-2 (Mild Strobing) */
+  body.idiot-mild {
+    animation: mildStrobe 1s infinite alternate;
+  }
+  @keyframes mildStrobe {
+    0% { background-color: #0a0302; }
+    100% { background-color: #2a0005; }
   }
 
-  @keyframes idiotStrobeBPM {
-    0%, 100% {
-      background-color: #000 !important;
-    }
-    48% {
-      background-color: #fff !important;
-    }
-    96% {
-      background-color: #ff003c !important; /* Low rate random crimson warning frames */
-    }
+  /* Stage 3-4 (Chaotic strobing & translations) */
+  body.idiot-hard {
+    animation: hardStrobe 0.15s infinite steps(2, start) !important;
+  }
+  @keyframes hardStrobe {
+    0% { background-color: #000; }
+    100% { background-color: #400008; }
   }
 
-  body.idiot-mode-active .profile-wrapper {
-    animation: idiotPulseWrapper 0.329s infinite ease-in-out !important;
+  body.idiot-extreme {
+    animation: extremeStrobe 0.08s infinite steps(2, start) !important;
+    overflow: hidden !important;
+  }
+  @keyframes extremeStrobe {
+    0%, 100% { background-color: #000; }
+    33% { background-color: #fff; }
+    66% { background-color: #ff003c; }
+  }
+
+  body.idiot-extreme .profile-wrapper {
+    animation: extremeVibrate 0.1s infinite linear, extremePulseWrapper 0.329s infinite ease-in-out !important;
     border-color: #fff !important;
   }
-
-  @keyframes idiotPulseWrapper {
-    0%, 100% { transform: scale(1) rotate(0deg); }
-    50% { transform: scale(1.03) rotate(0.5deg); }
+  @keyframes extremeVibrate {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-4px, 3px) rotate(-1deg); }
+    40% { transform: translate(3px, -2px) rotate(1deg); }
+    60% { transform: translate(-3px, -3px) rotate(-1.5deg); }
+    80% { transform: translate(4px, 4px) rotate(1.5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
   }
 
-  body.idiot-mode-active .tactical-panel,
-  body.idiot-mode-active .stat-box {
-    animation: bounceBPM 0.329s infinite cubic-bezier(0.25, 0.8, 0.25, 1.4) alternate !important;
+  body.idiot-extreme .tactical-panel,
+  body.idiot-extreme .stat-box {
+    animation: extremeBounce 0.3s infinite cubic-bezier(0.25, 0.8, 0.25, 1.4) alternate !important;
   }
-
-  @keyframes bounceBPM {
+  @keyframes extremeBounce {
     0% { transform: scale(1); }
-    100% { transform: scale(1.05); }
+    100% { transform: scale(1.08); }
   }
 
-  /* Floating entities for special easter egg */
+  /* Dynamic Alert Elements */
+  #idiot-center-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100001;
+    font-family: 'Consolas', monospace;
+    font-weight: 900;
+    font-size: 38px;
+    color: #ff003c;
+    background: #000;
+    border: 4px solid #ff003c;
+    padding: 20px 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    box-shadow: 0 0 40px #ff003c;
+    animation: flashAlert 0.2s infinite alternate;
+  }
+  @keyframes flashAlert {
+    0% { filter: drop-shadow(0 0 20px #ff003c); border-color: #ff003c; }
+    100% { filter: drop-shadow(0 0 50px #ff3300); border-color: #ff9900; transform: translate(-50%, -50%) scale(1.05); }
+  }
+
+  /* Floating banners during progressive deterioration */
   .idiot-floating-banner {
     position: fixed;
     font-family: 'Consolas', monospace;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 24px;
     color: #ff003c;
     background: #000;
     border: 3px solid #fff;
     padding: 10px 20px;
-    z-index: 100001;
+    z-index: 99997;
     pointer-events: none;
     letter-spacing: 2px;
     box-shadow: 0 0 20px #ff003c;
     text-transform: uppercase;
     animation: bannerGlitch 0.15s infinite alternate;
   }
-
   @keyframes bannerGlitch {
     0% { transform: translate(1px, -1px) skewX(-4deg); filter: invert(0); }
     100% { transform: translate(-1px, 2px) skewX(4deg); filter: invert(1); }
   }
 
+  /* Stage 5: Laugh overlay wall */
+  #laugh-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #ff003c;
+    font-family: 'Consolas', monospace;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.2;
+    overflow: hidden;
+    z-index: 100002;
+    padding: 20px;
+    box-sizing: border-box;
+    word-break: break-all;
+    text-shadow: 0 0 10px #ff003c, 0 0 20px #ff3300;
+    animation: laughScroll 0.05s infinite linear;
+  }
+  @keyframes laughScroll {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(1px, -2px) skewY(1deg); }
+    100% { transform: translate(-1px, 1px) skewY(-1deg); }
+  }
+
+  /* Stage 6: Full screen blinding strobe pulse */
+  #pulse-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100003;
+    animation: finalPulses 0.15s steps(2, start) infinite;
+  }
+  @keyframes finalPulses {
+    0%, 100% { background: #fff; }
+    50% { background: #000; }
+  }
+
   /* Responsive styling adjust for sidebar visibility */
   @media only screen and (max-width: 768px) {
     #tactical-sidebar {
-      top: auto;
-      bottom: 0;
-      right: -100%;
-      width: 100%;
-      height: 380px;
-      border-radius: 12px 12px 0 0;
-      border: 2px solid var(--primary-dark);
-      border-bottom: none;
-      transition: bottom 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 290px;
+      right: -290px;
+      height: 100vh;
+      top: 0;
     }
     #tactical-sidebar.expanded {
       right: 0;
-      bottom: 0;
     }
-    #sidebar-handle {
-      left: 50%;
-      top: -42px;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 40px;
-      writing-mode: horizontal-tb;
-      border: 2px solid var(--primary-dark);
-      border-bottom: none;
-      border-radius: 8px 8px 0 0;
+    #sidebar-toggle-btn {
+      top: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      font-size: 10px;
     }
   }
 </style></head><body class="intro-active">
@@ -536,17 +617,25 @@
   <section id="intro-overlay">
     <button id="enter-btn">E N T E R</button>
     <div class="intro-disclaimer">
-      <span>Warning:</span> High-fidelity graphical environment. Real-time visual processes and dynamic shading filters are active. Medium to high-end hardware recommended.
+      <div style="font-weight: bold; color: var(--accent); margin-bottom: 5px;">[ SYSTEM PERFORMANCE WARNING ]</div>
+      <div>High-fidelity graphical environment. Real-time visual processes and dynamic shading filters are active. Medium to high-end hardware recommended.</div>
+      <div style="border-top: 1px dashed rgba(255, 153, 0, 0.25); margin-top: 10px; padding-top: 10px; font-size: 10px; color: #ff9900; text-transform: none; line-height: 1.4;">
+        <strong style="color: #ff3300;">Gen Z/Alpha Translation:</strong> fr fr no cap, this layout is cooking with straight heat. If your device is a potato or on life support, it is high-key going to lag. Goated specs recommended or you're cooked.
+      </div>
     </div>
     <video id="intro-video" src="assets/Sols RNG Custom Intro.mp4" playsinline preload="auto"></video>
     <div id="techy-text">Fully Loaded!</div>
   </section>
 
+  <!-- GLOBAL FLOATING SIDEBAR TOGGLE BUTTON -->
+  <button id="sidebar-toggle-btn">⚡ CONSOLE</button>
+
   <!-- COLLAPSIBLE SIDEBAR INTERFACE -->
   <aside id="tactical-sidebar">
-    <div id="sidebar-handle">SYSTEM</div>
-    
-    <div class="sidebar-header">Tactical Console v2.5</div>
+    <div class="sidebar-header">
+      <span>Tactical Console v2.5</span>
+      <button id="sidebar-close-btn">&times;</button>
+    </div>
     
     <div class="sidebar-content">
       
@@ -910,7 +999,7 @@
       <div style="font-size:12px;color:#ff3300;font-weight:bold;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;animation:pulseBlink 1.5s infinite">Real-Time Note:</div>
       <p style="font-style:italic;font-size:15px;color:#ffffff;line-height:1.5;margin:0 0 20px 0;word-wrap:break-word;text-shadow:0 0 8px var(--accent);" class="glitch-hover">"I HAVE SUPER IMPROVED MY DESCRIPTION I HOPE YOUR HAPPY!"</p>
       <div class="tactical-video-container">
-        <iframe src="https://www.youtube.com/embed/V4elF7---KQ?autoplay=0" style="width:100%;aspect-ratio:16/9;border:none;display:block;" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen="true"></iframe>
+        <iframe src="https://www.youtube.com/embed/V4elF4---KQ?autoplay=0" style="width:100%;aspect-ratio:16/9;border:none;display:block;" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen="true"></iframe>
       </div>
       <div class="bottom-pulse-wrapper">
         <!-- Replaced bottom gif asset -->
@@ -937,7 +1026,7 @@
       { id: "sqK-jh4TDXo", name: "Machine Love~", probability: 9.4 },
       { id: "evloseZCQcc", name: "New World", probability: 9.4 },
       { id: "WYER0HZMMnI", name: "YO MAMA! (Joke Track)", probability: 5.0 },
-      { id: "udiDAYzMRmA", name: "YOU ARE AN IDIOT (Easter Egg)", probability: 1.0 }
+      { id: "udiDAYzMRmA", name: "☺ DO NOT USE ☻", probability: 1.0 } // Renamed to fit request
     ];
 
     let ytPlayer = null;
@@ -945,9 +1034,13 @@
     let fadeInterval = null;
     let currentVolume = 15; // default low target
     let isTransitioning = false;
-    let actionDebounceTimer = null;
     let inputCooldown = false;
-    let idiotTimerInterval = null;
+
+    // Progressive Idiot Mode Tracker Variables
+    let idiotPollInterval = null;
+    let idiotSpawnInterval = null;
+    let idiotTimeouts = [];
+    let currentIdiotStage = -1;
 
     // 2. Initialize YouTube Player API Frame
     function onYouTubeIframeAPIReady() {
@@ -976,14 +1069,12 @@
     }
 
     function onPlayerStateChange(event) {
-      // If active track ends, pick another track automatically
       if (event.data === YT.PlayerState.ENDED) {
         if (tracksList[selectedTrackIndex].id === "udiDAYzMRmA") {
-          // "You are an idiot" ended, do not loop - swap to random non-idiot track
+          // Track 12 finished standard loop or auto skip trigger
           cleanupIdiotMode();
           playRandomWeightedTrack();
         } else {
-          // Standard track ended, loop current or auto-select a new one
           playRandomWeightedTrack();
         }
       }
@@ -1012,7 +1103,8 @@
       const toggleScanlines = document.getElementById('toggle-scanlines');
       const toggleGlow = document.getElementById('toggle-glow');
       const sidebar = document.getElementById('tactical-sidebar');
-      const handle = document.getElementById('sidebar-handle');
+      const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
+      const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
       
       const playBtn = document.getElementById('audio-play');
       const pauseBtn = document.getElementById('audio-pause');
@@ -1036,7 +1128,8 @@
         
         let labelName = track.name;
         if (track.id === "udiDAYzMRmA") {
-          li.id = "idiot-easter-egg"; // Secret targeting ID for Easter Egg styling
+          li.style.color = "var(--red)";
+          li.style.fontWeight = "bold";
         }
 
         li.innerHTML = `<span>${idx + 1}. ${labelName}</span><span class="track-pct">${track.probability}%</span>`;
@@ -1088,12 +1181,18 @@
           setTimeout(() => {
             introOverlay.remove();
           }, 800);
-        }, 1100); // Speed optimized transition display time
+        }, 800); // Accelerated splash screen delay
       }
 
       // Sidebar collapse controls
-      handle.addEventListener('click', () => {
-        sidebar.classList.toggle('expanded');
+      sidebarToggleBtn.addEventListener('click', () => {
+        sidebar.classList.add('expanded');
+        sidebarToggleBtn.style.display = 'none';
+      });
+
+      sidebarCloseBtn.addEventListener('click', () => {
+        sidebar.classList.remove('expanded');
+        sidebarToggleBtn.style.display = 'block';
       });
 
       // Scanline & glow overrides mapping
@@ -1150,13 +1249,15 @@
 
     function executeTrackTransition(trackIndex) {
       if (!ytPlayer || !ytPlayer.loadVideoById) {
-        // Fallback retry block if player context is initializing asynchronously
         setTimeout(() => { executeTrackTransition(trackIndex); }, 200);
         return;
       }
 
       if (isTransitioning) return;
       isTransitioning = true;
+
+      // Ensure we immediately clean up any lingering Easter Egg states
+      cleanupIdiotMode();
 
       // Update manual playlist highlight classes
       const items = document.querySelectorAll('.track-item');
@@ -1177,13 +1278,11 @@
       const nextTrack = tracksList[trackIndex];
       selectedTrackIndex = trackIndex;
 
-      // Get user fade parameters
       const fadeOutSec = parseFloat(document.getElementById('fade-end').value);
       const fadeInSec = parseFloat(document.getElementById('fade-start').value);
 
       clearInterval(fadeInterval);
 
-      // Perform fade down sequence if current media is playing active
       let currentVol = ytPlayer.getVolume();
       const fadeOutSteps = 20;
       const fadeOutIntervalTime = (fadeOutSec * 1000) / fadeOutSteps;
@@ -1206,15 +1305,7 @@
     }
 
     function loadAndFadeInNextTrack(track, fadeInSec) {
-      // Set Now Playing text safely
       document.getElementById('now-playing').innerText = track.name + " (Loading...)";
-      
-      // Check for Easter Egg Trigger Sequence
-      if (track.id === "udiDAYzMRmA") {
-        initiateIdiotMode();
-      } else {
-        cleanupIdiotMode();
-      }
 
       ytPlayer.loadVideoById(track.id, 0);
       ytPlayer.setVolume(0);
@@ -1235,51 +1326,198 @@
           ytPlayer.setVolume(currentVolume);
           document.getElementById('now-playing').innerText = track.name + " [ONLINE]";
           isTransitioning = false;
+
+          // Track 12 Event Loop Initialisation
+          if (track.id === "udiDAYzMRmA") {
+            initiateIdiotMode();
+          }
         }
       }, fadeInIntervalTime);
     }
 
-    // 5. Special Easter Egg Control Functions
+    // Helper to spawn absolute floating text frames
+    function spawnFloatingText(text, color, duration, isEmoji = false) {
+      const banner = document.createElement('div');
+      banner.className = 'idiot-floating-banner';
+      banner.innerText = text;
+      if (isEmoji) {
+        banner.style.fontSize = '32px';
+        banner.style.border = 'none';
+        banner.style.background = 'transparent';
+        banner.style.boxShadow = 'none';
+      } else {
+        banner.style.color = color;
+      }
+
+      const x = Math.random() * (window.innerWidth - 320);
+      const y = Math.random() * (window.innerHeight - 80);
+      banner.style.left = x + 'px';
+      banner.style.top = y + 'px';
+
+      document.body.appendChild(banner);
+      setTimeout(() => { banner.remove(); }, duration);
+    }
+
+    // 5. Progressive Idiot Mode Event Routine
     function initiateIdiotMode() {
-      document.body.classList.add('idiot-mode-active');
-      
-      // Stop running dynamic spawn checks to prevent resource starvation
-      clearInterval(idiotTimerInterval);
-      
-      // Spawn procedural system error blocks in real-time
-      idiotTimerInterval = setInterval(() => {
-        if (!document.body.classList.contains('idiot-mode-active')) {
-          clearInterval(idiotTimerInterval);
-          return;
+      cleanupIdiotMode(); // Safe baseline sweep
+
+      currentIdiotStage = -1;
+
+      // Poll playback duration to update stages dynamically
+      idiotPollInterval = setInterval(() => {
+        if (!ytPlayer || typeof ytPlayer.getCurrentTime !== 'function') return;
+        
+        const time = ytPlayer.getCurrentTime();
+
+        // Stage 0: Calm (0-5s)
+        if (time >= 0 && time < 5) {
+          if (currentIdiotStage !== 0) {
+            currentIdiotStage = 0;
+            document.body.className = ''; // standard clean body
+            if (document.getElementById('toggle-scanlines').checked === false) document.body.classList.add('no-scanlines');
+            if (document.getElementById('toggle-glow').checked === false) document.body.classList.add('no-glow');
+          }
         }
-        
-        // Construct dynamic text frame
-        const banner = document.createElement('div');
-        banner.className = 'idiot-floating-banner';
-        banner.innerText = "YOU ARE AN IDIOT!";
-        
-        // Map random viewport coords
-        const x = Math.random() * (window.innerWidth - 300);
-        const y = Math.random() * (window.innerHeight - 80);
-        
-        banner.style.left = x + 'px';
-        banner.style.top = y + 'px';
-        
-        document.body.appendChild(banner);
-        
-        // Automated decay sequence
-        setTimeout(() => {
-          banner.remove();
-        }, 1800);
-      }, 500); // Spawn every 500ms at 182 BPM offset
+        // Stage 1: Inception (5s - 10s)
+        else if (time >= 5 && time < 10) {
+          if (currentIdiotStage !== 1) {
+            currentIdiotStage = 1;
+            document.body.className = 'idiot-mild';
+
+            // Spawns warnings slow sequence
+            const phrases = ["THIS IS YOUR WORSE MISTAKE, CHANGE AUDIO NOW", "&#layer3:", "실수", "間違い"];
+            let phraseIdx = 0;
+            
+            idiotSpawnInterval = setInterval(() => {
+              spawnFloatingText(phrases[phraseIdx % phrases.length], "#ff3300", 2500);
+              phraseIdx++;
+            }, 1200);
+          }
+        }
+        // Stage 2: Escalation (10s - 20s)
+        else if (time >= 10 && time < 20) {
+          if (currentIdiotStage !== 2) {
+            currentIdiotStage = 2;
+            clearInterval(idiotSpawnInterval);
+            document.body.className = 'idiot-hard';
+          }
+        }
+        // Stage 3: Threat (20s - 36s)
+        else if (time >= 20 && time < 36) {
+          if (currentIdiotStage !== 3) {
+            currentIdiotStage = 3;
+            document.body.className = 'idiot-hard';
+
+            // Mount centered Flash Alert
+            const alertBox = document.createElement('div');
+            alertBox.id = 'idiot-center-alert';
+            alertBox.innerText = "WARNING: FLASHING LIGHTS!";
+            document.body.appendChild(alertBox);
+
+            // Decay centered warning after 4 seconds
+            let warningTimeout = setTimeout(() => {
+              if (alertBox) alertBox.remove();
+            }, 4000);
+            idiotTimeouts.push(warningTimeout);
+          }
+        }
+        // Stage 4: Corruption (36s - 90s)
+        else if (time >= 36 && time < 90) {
+          if (currentIdiotStage !== 4) {
+            currentIdiotStage = 4;
+            document.body.className = 'idiot-extreme';
+
+            // High frequency spam execution
+            const spams = ["YOU ARE AN IDIOT", "☻☺☻☺"];
+            idiotSpawnInterval = setInterval(() => {
+              const pickIdx = Math.random() < 0.5 ? 0 : 1;
+              spawnFloatingText(spams[pickIdx], "#ff003c", 1800, pickIdx === 1);
+            }, 300);
+          }
+        }
+        // Stage 5: Laugh Wall (90s - 93s)
+        else if (time >= 90 && time < 93) {
+          if (currentIdiotStage !== 5) {
+            currentIdiotStage = 5;
+            
+            // Clean up visual banners and spawn intervals
+            clearInterval(idiotSpawnInterval);
+            const floating = document.querySelectorAll('.idiot-floating-banner');
+            floating.forEach(el => el.remove());
+
+            // Silently mute active media track
+            ytPlayer.setVolume(0);
+
+            // Mount full view laugh wall
+            const laughOverlay = document.createElement('div');
+            laughOverlay.id = 'laugh-overlay';
+            let laughChain = "";
+            for (let i = 0; i < 500; i++) {
+              laughChain += "HAHAHAHAHAHAHA ";
+            }
+            laughOverlay.innerText = laughChain;
+            document.body.appendChild(laughOverlay);
+          }
+        }
+        // Stage 6: Final Pulse (93s - 94.5s)
+        else if (time >= 93 && time < 94.5) {
+          if (currentIdiotStage !== 6) {
+            currentIdiotStage = 6;
+            
+            // Remove Laugh overlay
+            const laugh = document.getElementById('laugh-overlay');
+            if (laugh) laugh.remove();
+
+            // Mount blinding flashing overlay
+            const pulseOverlay = document.createElement('div');
+            pulseOverlay.id = 'pulse-overlay';
+            document.body.appendChild(pulseOverlay);
+          }
+        }
+        // Restoration Point (94.5s)
+        else if (time >= 94.5) {
+          cleanupIdiotMode();
+          playRandomWeightedTrack();
+        }
+
+      }, 200);
     }
 
     function cleanupIdiotMode() {
-      document.body.classList.remove('idiot-mode-active');
-      clearInterval(idiotTimerInterval);
+      // Clear checking registers
+      clearInterval(idiotPollInterval);
+      clearInterval(idiotSpawnInterval);
       
-      // Sweep any residual overlay floating entities
-      const residues = document.querySelectorAll('.idiot-floating-banner');
-      residues.forEach(el => el.remove());
+      // Clear array based timeouts
+      idiotTimeouts.forEach(t => clearTimeout(t));
+      idiotTimeouts = [];
+
+      // Clean global stage tracker
+      currentIdiotStage = -1;
+
+      // Purge state based styling rules
+      document.body.className = '';
+      if (document.getElementById('toggle-scanlines') && document.getElementById('toggle-scanlines').checked === false) {
+        document.body.classList.add('no-scanlines');
+      }
+      if (document.getElementById('toggle-glow') && document.getElementById('toggle-glow').checked === false) {
+        document.body.classList.add('no-glow');
+      }
+
+      // Sweep dynamic overlay frames
+      const alertBox = document.getElementById('idiot-center-alert');
+      if (alertBox) alertBox.remove();
+
+      const laugh = document.getElementById('laugh-overlay');
+      if (laugh) laugh.remove();
+
+      const pulse = document.getElementById('pulse-overlay');
+      if (pulse) pulse.remove();
+
+      const floating = document.querySelectorAll('.idiot-floating-banner');
+      floating.forEach(el => el.remove());
     }
   </script>
+
+</body></html>
